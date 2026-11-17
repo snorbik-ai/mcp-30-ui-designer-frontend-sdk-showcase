@@ -1,0 +1,2903 @@
+{
+  "bank_section": "06_INTERNAL_BATIHOME_200_INDEX",
+  "source": "frontend/src/presentation",
+  "levels": {
+    "01-primitives": [
+      {
+        "component_id": "INT-01-AUTH",
+        "name": "auth/",
+        "dpn_level": "01-primitives",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/01-primitives/auth/",
+        "files": [
+          "AuthButton.tsx",
+          "AuthInput.tsx",
+          "AuthTabHeader.tsx",
+          "GoogleLoginButton.tsx"
+        ],
+        "tags": [
+          "auth",
+          "01-primitives"
+        ]
+      },
+      {
+        "component_id": "INT-01-BADGE",
+        "name": "Badge.tsx",
+        "dpn_level": "01-primitives",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/01-primitives/Badge.tsx",
+        "lines": 37,
+        "tags": [
+          "badge",
+          "01-primitives"
+        ]
+      },
+      {
+        "component_id": "INT-01-BRAINSELECTORBADGE",
+        "name": "BrainSelectorBadge.tsx",
+        "dpn_level": "01-primitives",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/01-primitives/BrainSelectorBadge.tsx",
+        "lines": 93,
+        "tags": [
+          "brain",
+          "selector",
+          "badge",
+          "01-primitives"
+        ]
+      },
+      {
+        "component_id": "INT-01-BUTTON",
+        "name": "Button.tsx",
+        "dpn_level": "01-primitives",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/01-primitives/Button.tsx",
+        "lines": 59,
+        "tags": [
+          "button",
+          "01-primitives"
+        ]
+      },
+      {
+        "component_id": "INT-01-CARD",
+        "name": "Card.tsx",
+        "dpn_level": "01-primitives",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/01-primitives/Card.tsx",
+        "lines": 42,
+        "tags": [
+          "card",
+          "01-primitives"
+        ]
+      },
+      {
+        "component_id": "INT-01-FAVORITEBUTTON",
+        "name": "FavoriteButton.tsx",
+        "dpn_level": "01-primitives",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/01-primitives/FavoriteButton.tsx",
+        "lines": 55,
+        "tags": [
+          "favorite",
+          "button",
+          "01-primitives"
+        ]
+      },
+      {
+        "component_id": "INT-01-INPUT",
+        "name": "Input.tsx",
+        "dpn_level": "01-primitives",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/01-primitives/Input.tsx",
+        "lines": 46,
+        "tags": [
+          "input",
+          "01-primitives"
+        ]
+      },
+      {
+        "component_id": "INT-01-KPICHIP",
+        "name": "KpiChip.tsx",
+        "dpn_level": "01-primitives",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/01-primitives/KpiChip.tsx",
+        "lines": 39,
+        "tags": [
+          "kpi",
+          "chip",
+          "01-primitives"
+        ]
+      }
+    ],
+    "02-features": [
+      {
+        "component_id": "INT-02-ADMINBOMCOMPONENTSGRID",
+        "name": "AdminBomComponentsGrid.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminBomComponentsGrid.tsx",
+        "lines": 117,
+        "tags": [
+          "admin",
+          "bom",
+          "components",
+          "grid",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ADMINBUSINESSRULESLIST",
+        "name": "AdminBusinessRulesList.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminBusinessRulesList.tsx",
+        "lines": 123,
+        "tags": [
+          "admin",
+          "business",
+          "rules",
+          "list",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ADMINCALEPINAGEPREVIEWCARD",
+        "name": "AdminCalepinagePreviewCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminCalepinagePreviewCard.tsx",
+        "lines": 79,
+        "tags": [
+          "admin",
+          "calepinage",
+          "preview",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ADMINCATALOGUETABS",
+        "name": "AdminCatalogueTabs.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminCatalogueTabs.tsx",
+        "lines": 57,
+        "tags": [
+          "admin",
+          "catalogue",
+          "tabs",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ADMINCATALOGUEVIEW",
+        "name": "AdminCatalogueView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminCatalogueView.tsx",
+        "lines": 136,
+        "tags": [
+          "admin",
+          "catalogue",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ADMINORDERSSTATSBAR",
+        "name": "AdminOrdersStatsBar.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminOrdersStatsBar.tsx",
+        "lines": 58,
+        "tags": [
+          "admin",
+          "orders",
+          "stats",
+          "bar",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ADMINORDERSTABLE",
+        "name": "AdminOrdersTable.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminOrdersTable.tsx",
+        "lines": 353,
+        "tags": [
+          "admin",
+          "orders",
+          "table",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ADMINORDERSVIEW",
+        "name": "AdminOrdersView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminOrdersView.tsx",
+        "lines": 82,
+        "tags": [
+          "admin",
+          "orders",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ADMINPRODUCTEDITMODAL",
+        "name": "AdminProductEditModal.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminProductEditModal.tsx",
+        "lines": 129,
+        "tags": [
+          "admin",
+          "product",
+          "edit",
+          "modal",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ADMINSYSTEMSTABLE",
+        "name": "AdminSystemsTable.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AdminSystemsTable.tsx",
+        "lines": 86,
+        "tags": [
+          "admin",
+          "systems",
+          "table",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-AUTH",
+        "name": "auth/",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/auth/",
+        "files": [
+          "GoogleAccountChooserModal.tsx",
+          "LoginFormPartial.tsx",
+          "RegisterFormPartial.tsx",
+          "index.ts",
+          "useAuthController.ts"
+        ],
+        "tags": [
+          "auth",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-AUTHMAGICLINKFORM",
+        "name": "AuthMagicLinkForm.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AuthMagicLinkForm.tsx",
+        "lines": 77,
+        "tags": [
+          "auth",
+          "magic",
+          "link",
+          "form",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-AUTHPROACCOUNTCTA",
+        "name": "AuthProAccountCta.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AuthProAccountCta.tsx",
+        "lines": 29,
+        "tags": [
+          "auth",
+          "pro",
+          "account",
+          "cta",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-AUTHSECURITYBADGES",
+        "name": "AuthSecurityBadges.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AuthSecurityBadges.tsx",
+        "lines": 24,
+        "tags": [
+          "auth",
+          "security",
+          "badges",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-AUTHVIEW",
+        "name": "AuthView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/AuthView.tsx",
+        "lines": 18,
+        "tags": [
+          "auth",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CART",
+        "name": "cart/",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/cart/",
+        "files": [
+          "CartContext.tsx",
+          "cart.types.ts",
+          "index.ts",
+          "useCartController.ts"
+        ],
+        "tags": [
+          "cart",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CATALOGUE",
+        "name": "catalogue/",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/catalogue/",
+        "files": [
+          "CatalogInspectionModal.tsx",
+          "CatalogPillarCard.tsx",
+          "CatalogProductCard.tsx",
+          "index.ts",
+          "useCatalogController.ts"
+        ],
+        "tags": [
+          "catalogue",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CHECKOUTDELIVERYDETAILSFORM",
+        "name": "CheckoutDeliveryDetailsForm.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/CheckoutDeliveryDetailsForm.tsx",
+        "lines": 105,
+        "tags": [
+          "checkout",
+          "delivery",
+          "details",
+          "form",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CHECKOUTFINANCIALSUMMARYRAIL",
+        "name": "CheckoutFinancialSummaryRail.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/CheckoutFinancialSummaryRail.tsx",
+        "lines": 115,
+        "tags": [
+          "checkout",
+          "financial",
+          "summary",
+          "rail",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CHECKOUTPAYMENTMETHODSELECTOR",
+        "name": "CheckoutPaymentMethodSelector.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/CheckoutPaymentMethodSelector.tsx",
+        "lines": 135,
+        "tags": [
+          "checkout",
+          "payment",
+          "method",
+          "selector",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CHECKOUTVIEW",
+        "name": "CheckoutView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/CheckoutView.tsx",
+        "lines": 6,
+        "tags": [
+          "checkout",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CINEMAGRAPHHEROBACKGROUND",
+        "name": "CinemagraphHeroBackground.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/CinemagraphHeroBackground.tsx",
+        "lines": 140,
+        "tags": [
+          "cinemagraph",
+          "hero",
+          "background",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CLIENTPROJECTCARD",
+        "name": "ClientProjectCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ClientProjectCard.tsx",
+        "lines": 189,
+        "tags": [
+          "client",
+          "project",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CLIENTPROJECTFILTERS",
+        "name": "ClientProjectFilters.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ClientProjectFilters.tsx",
+        "lines": 64,
+        "tags": [
+          "client",
+          "project",
+          "filters",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CLIENTPROJECTSSTATSBAR",
+        "name": "ClientProjectsStatsBar.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ClientProjectsStatsBar.tsx",
+        "lines": 76,
+        "tags": [
+          "client",
+          "projects",
+          "stats",
+          "bar",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CONFIGURATOR-MODE",
+        "name": "configurator-mode/",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/configurator-mode/",
+        "files": [
+          "ConfiguratorModeHelpModal.tsx",
+          "ConfiguratorModeSwitcherBar.tsx",
+          "index.ts"
+        ],
+        "tags": [
+          "configurator",
+          "mode",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CONFIGURATOR-STEP-FORM",
+        "name": "configurator-step-form/",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/configurator-step-form/",
+        "files": [
+          "ConfiguratorStepForm.tsx",
+          "index.ts",
+          "useConfiguratorStepActions.ts"
+        ],
+        "tags": [
+          "configurator",
+          "step",
+          "form",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CONFIGURATOR3DWORKSPACE",
+        "name": "Configurator3DWorkspace.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/Configurator3DWorkspace.tsx",
+        "lines": 376,
+        "tags": [
+          "configurator3",
+          "d",
+          "workspace",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CONFIGURATORSTEPFORM",
+        "name": "ConfiguratorStepForm.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ConfiguratorStepForm.tsx",
+        "lines": 6,
+        "tags": [
+          "configurator",
+          "step",
+          "form",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CONFIGURATORSUMMARYRAIL",
+        "name": "ConfiguratorSummaryRail.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ConfiguratorSummaryRail.tsx",
+        "lines": 193,
+        "tags": [
+          "configurator",
+          "summary",
+          "rail",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CONFIGURATORVISUALIZER2D",
+        "name": "ConfiguratorVisualizer2D.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ConfiguratorVisualizer2D.tsx",
+        "lines": 179,
+        "tags": [
+          "configurator",
+          "visualizer2",
+          "d",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CONTACTPANELMODAL",
+        "name": "ContactPanelModal.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ContactPanelModal.tsx",
+        "lines": 411,
+        "tags": [
+          "contact",
+          "panel",
+          "modal",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-COPILOTEPANEL",
+        "name": "CopilotePanel.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/CopilotePanel.tsx",
+        "lines": 153,
+        "tags": [
+          "copilote",
+          "panel",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-COPILOTTURNCHAT",
+        "name": "CopilotTurnChat.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/CopilotTurnChat.tsx",
+        "lines": 158,
+        "tags": [
+          "copilot",
+          "turn",
+          "chat",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-CROSSSECTIONSVGDIAGRAM",
+        "name": "CrossSectionSvgDiagram.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/CrossSectionSvgDiagram.tsx",
+        "lines": 192,
+        "tags": [
+          "cross",
+          "section",
+          "svg",
+          "diagram",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-DESKTOP-PILOT-PANEL",
+        "name": "desktop-pilot-panel/",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/desktop-pilot-panel/",
+        "files": [
+          "DesktopPilotPanel.tsx",
+          "index.ts",
+          "useDesktopPilotController.ts"
+        ],
+        "tags": [
+          "desktop",
+          "pilot",
+          "panel",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-DESKTOPPILOTPANEL",
+        "name": "DesktopPilotPanel.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/DesktopPilotPanel.tsx",
+        "lines": 6,
+        "tags": [
+          "desktop",
+          "pilot",
+          "panel",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-DEVISBLUEPRINTVIEWER",
+        "name": "DevisBlueprintViewer.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/DevisBlueprintViewer.tsx",
+        "lines": 140,
+        "tags": [
+          "devis",
+          "blueprint",
+          "viewer",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-DEVISBREAKDOWNTABLE",
+        "name": "DevisBreakdownTable.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/DevisBreakdownTable.tsx",
+        "lines": 72,
+        "tags": [
+          "devis",
+          "breakdown",
+          "table",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-DEVISSUMMARYCARD",
+        "name": "DevisSummaryCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/DevisSummaryCard.tsx",
+        "lines": 101,
+        "tags": [
+          "devis",
+          "summary",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-DEVISTECHNICALSPECCARDS",
+        "name": "DevisTechnicalSpecCards.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/DevisTechnicalSpecCards.tsx",
+        "lines": 99,
+        "tags": [
+          "devis",
+          "technical",
+          "spec",
+          "cards",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-DEVISVALIDATIONRAIL",
+        "name": "DevisValidationRail.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/DevisValidationRail.tsx",
+        "lines": 307,
+        "tags": [
+          "devis",
+          "validation",
+          "rail",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-DIMENSIONCONTROLPANEL",
+        "name": "DimensionControlPanel.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/DimensionControlPanel.tsx",
+        "lines": 111,
+        "tags": [
+          "dimension",
+          "control",
+          "panel",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-FAVORITES",
+        "name": "favorites/",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/favorites/",
+        "files": [
+          "FavoritesContext.tsx",
+          "favorites.types.ts",
+          "index.ts",
+          "useFavoritesController.ts"
+        ],
+        "tags": [
+          "favorites",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-GUIDESBEVALIDATIONBANNER",
+        "name": "GuidesBeValidationBanner.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/GuidesBeValidationBanner.tsx",
+        "lines": 73,
+        "tags": [
+          "guides",
+          "be",
+          "validation",
+          "banner",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-GUIDESDOWNLOADKITCARD",
+        "name": "GuidesDownloadKitCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/GuidesDownloadKitCard.tsx",
+        "lines": 70,
+        "tags": [
+          "guides",
+          "download",
+          "kit",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-GUIDESFAQACCORDIONCARD",
+        "name": "GuidesFaqAccordionCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/GuidesFaqAccordionCard.tsx",
+        "lines": 108,
+        "tags": [
+          "guides",
+          "faq",
+          "accordion",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-GUIDESHEROFUNDAMENTALRULES",
+        "name": "GuidesHeroFundamentalRules.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/GuidesHeroFundamentalRules.tsx",
+        "lines": 54,
+        "tags": [
+          "guides",
+          "hero",
+          "fundamental",
+          "rules",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-GUIDESMEASUREMENTCARD",
+        "name": "GuidesMeasurementCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/GuidesMeasurementCard.tsx",
+        "lines": 201,
+        "tags": [
+          "guides",
+          "measurement",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-GUIDESSIDEBARNAV",
+        "name": "GuidesSidebarNav.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/GuidesSidebarNav.tsx",
+        "lines": 108,
+        "tags": [
+          "guides",
+          "sidebar",
+          "nav",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-GUIDESTECHNICALCUTCARD",
+        "name": "GuidesTechnicalCutCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/GuidesTechnicalCutCard.tsx",
+        "lines": 203,
+        "tags": [
+          "guides",
+          "technical",
+          "cut",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-GUIDESVIDEOTUTORIALSCARD",
+        "name": "GuidesVideoTutorialsCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/GuidesVideoTutorialsCard.tsx",
+        "lines": 112,
+        "tags": [
+          "guides",
+          "video",
+          "tutorials",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-GUIDESVIEW",
+        "name": "GuidesView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/GuidesView.tsx",
+        "lines": 406,
+        "tags": [
+          "guides",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-HEROAIPILOTBAR",
+        "name": "HeroAiPilotBar.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/HeroAiPilotBar.tsx",
+        "lines": 95,
+        "tags": [
+          "hero",
+          "ai",
+          "pilot",
+          "bar",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-HEROCONTENTCTA",
+        "name": "HeroContentCta.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/HeroContentCta.tsx",
+        "lines": 150,
+        "tags": [
+          "hero",
+          "content",
+          "cta",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-HEROMEDIALOOP",
+        "name": "HeroMediaLoop.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/HeroMediaLoop.tsx",
+        "lines": 141,
+        "tags": [
+          "hero",
+          "media",
+          "loop",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-HOMEVIEW",
+        "name": "HomeView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/HomeView.tsx",
+        "lines": 397,
+        "tags": [
+          "home",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-MOBILEASSISTANTMODAL",
+        "name": "MobileAssistantModal.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/MobileAssistantModal.tsx",
+        "lines": 302,
+        "tags": [
+          "mobile",
+          "assistant",
+          "modal",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-MOBILECOPILOTBOTTOMSHEET",
+        "name": "MobileCopilotBottomSheet.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/MobileCopilotBottomSheet.tsx",
+        "lines": 236,
+        "tags": [
+          "mobile",
+          "copilot",
+          "bottom",
+          "sheet",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-NORMCOMPLIANCEBANNER",
+        "name": "NormComplianceBanner.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/NormComplianceBanner.tsx",
+        "lines": 49,
+        "tags": [
+          "norm",
+          "compliance",
+          "banner",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-ORDERTRACKINGVIEW",
+        "name": "OrderTrackingView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/OrderTrackingView.tsx",
+        "lines": 115,
+        "tags": [
+          "order",
+          "tracking",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-POSEFAQCARD",
+        "name": "PoseFaqCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/PoseFaqCard.tsx",
+        "lines": 46,
+        "tags": [
+          "pose",
+          "faq",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-POSENETWORKMAPCARD",
+        "name": "PoseNetworkMapCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/PoseNetworkMapCard.tsx",
+        "lines": 114,
+        "tags": [
+          "pose",
+          "network",
+          "map",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-POSEOPTIONCARD",
+        "name": "PoseOptionCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/PoseOptionCard.tsx",
+        "lines": 110,
+        "tags": [
+          "pose",
+          "option",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-POSEVIEW",
+        "name": "PoseView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/PoseView.tsx",
+        "lines": 104,
+        "tags": [
+          "pose",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-PROCESSSTEPCARD",
+        "name": "ProcessStepCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ProcessStepCard.tsx",
+        "lines": 48,
+        "tags": [
+          "process",
+          "step",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-PRODUCTDETAILVIEW",
+        "name": "ProductDetailView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ProductDetailView.tsx",
+        "lines": 6,
+        "tags": [
+          "product",
+          "detail",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-PRODUCTDOWNLOADCTA",
+        "name": "ProductDownloadCta.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ProductDownloadCta.tsx",
+        "lines": 69,
+        "tags": [
+          "product",
+          "download",
+          "cta",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-PRODUCTGALLERYVIEWER",
+        "name": "ProductGalleryViewer.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ProductGalleryViewer.tsx",
+        "lines": 96,
+        "tags": [
+          "product",
+          "gallery",
+          "viewer",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-PRODUCTSPECSLIST",
+        "name": "ProductSpecsList.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ProductSpecsList.tsx",
+        "lines": 66,
+        "tags": [
+          "product",
+          "specs",
+          "list",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-PRODUCTVARIANTSSELECTOR",
+        "name": "ProductVariantsSelector.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ProductVariantsSelector.tsx",
+        "lines": 90,
+        "tags": [
+          "product",
+          "variants",
+          "selector",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-PROJECTCARD",
+        "name": "ProjectCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ProjectCard.tsx",
+        "lines": 85,
+        "tags": [
+          "project",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-PROMPTBAR",
+        "name": "PromptBar.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/PromptBar.tsx",
+        "lines": 77,
+        "tags": [
+          "prompt",
+          "bar",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-REALISATIONCARD",
+        "name": "RealisationCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/RealisationCard.tsx",
+        "lines": 111,
+        "tags": [
+          "realisation",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-REALISATIONSCTABANNER",
+        "name": "RealisationsCtaBanner.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/RealisationsCtaBanner.tsx",
+        "lines": 54,
+        "tags": [
+          "realisations",
+          "cta",
+          "banner",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-REALISATIONSFILTERRAIL",
+        "name": "RealisationsFilterRail.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/RealisationsFilterRail.tsx",
+        "lines": 122,
+        "tags": [
+          "realisations",
+          "filter",
+          "rail",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-REALISATIONSHEROSTATS",
+        "name": "RealisationsHeroStats.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/RealisationsHeroStats.tsx",
+        "lines": 60,
+        "tags": [
+          "realisations",
+          "hero",
+          "stats",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-REALISATIONSTESTIMONIALCARD",
+        "name": "RealisationsTestimonialCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/RealisationsTestimonialCard.tsx",
+        "lines": 91,
+        "tags": [
+          "realisations",
+          "testimonial",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-REALISATIONSVIEW",
+        "name": "RealisationsView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/RealisationsView.tsx",
+        "lines": 97,
+        "tags": [
+          "realisations",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SAVACTIVETICKETSCARD",
+        "name": "SavActiveTicketsCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/SavActiveTicketsCard.tsx",
+        "lines": 41,
+        "tags": [
+          "sav",
+          "active",
+          "tickets",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SAVCLAIMFORM",
+        "name": "SavClaimForm.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/SavClaimForm.tsx",
+        "lines": 125,
+        "tags": [
+          "sav",
+          "claim",
+          "form",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SAVREASSURANCEBANNER",
+        "name": "SavReassuranceBanner.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/SavReassuranceBanner.tsx",
+        "lines": 42,
+        "tags": [
+          "sav",
+          "reassurance",
+          "banner",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SAVVIEW",
+        "name": "SavView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/SavView.tsx",
+        "lines": 134,
+        "tags": [
+          "sav",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SHAPESELECTORGRID",
+        "name": "ShapeSelectorGrid.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/ShapeSelectorGrid.tsx",
+        "lines": 87,
+        "tags": [
+          "shape",
+          "selector",
+          "grid",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SOLUTIONCARD",
+        "name": "SolutionCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/SolutionCard.tsx",
+        "lines": 159,
+        "tags": [
+          "solution",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SOLUTIONHEROGALLERY",
+        "name": "SolutionHeroGallery.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/SolutionHeroGallery.tsx",
+        "lines": 123,
+        "tags": [
+          "solution",
+          "hero",
+          "gallery",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SOLUTIONPOSEVARIANTCARD",
+        "name": "SolutionPoseVariantCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/SolutionPoseVariantCard.tsx",
+        "lines": 113,
+        "tags": [
+          "solution",
+          "pose",
+          "variant",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SOLUTIONSVIEW",
+        "name": "SolutionsView.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/SolutionsView.tsx",
+        "lines": 118,
+        "tags": [
+          "solutions",
+          "view",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-SOLUTIONTECHNICALSUMMARY",
+        "name": "SolutionTechnicalSummary.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/SolutionTechnicalSummary.tsx",
+        "lines": 137,
+        "tags": [
+          "solution",
+          "technical",
+          "summary",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-STEPPER8STEPS",
+        "name": "Stepper8Steps.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/Stepper8Steps.tsx",
+        "lines": 75,
+        "tags": [
+          "stepper8",
+          "steps",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-TECHNICALSPECSTABLE",
+        "name": "TechnicalSpecsTable.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/TechnicalSpecsTable.tsx",
+        "lines": 107,
+        "tags": [
+          "technical",
+          "specs",
+          "table",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-TRACKINGDOCUMENTSCARD",
+        "name": "TrackingDocumentsCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/TrackingDocumentsCard.tsx",
+        "lines": 123,
+        "tags": [
+          "tracking",
+          "documents",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-TRACKINGFREIGHTPACKAGESCARD",
+        "name": "TrackingFreightPackagesCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/TrackingFreightPackagesCard.tsx",
+        "lines": 125,
+        "tags": [
+          "tracking",
+          "freight",
+          "packages",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-TRACKINGKPICARDS",
+        "name": "TrackingKpiCards.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/TrackingKpiCards.tsx",
+        "lines": 76,
+        "tags": [
+          "tracking",
+          "kpi",
+          "cards",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-TRACKINGSUPPORTSIDEBAR",
+        "name": "TrackingSupportSidebar.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/TrackingSupportSidebar.tsx",
+        "lines": 141,
+        "tags": [
+          "tracking",
+          "support",
+          "sidebar",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-TRACKINGTIMELINESTEPPER",
+        "name": "TrackingTimelineStepper.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/TrackingTimelineStepper.tsx",
+        "lines": 153,
+        "tags": [
+          "tracking",
+          "timeline",
+          "stepper",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-TRACKINGWORKSHOPSPECSCARD",
+        "name": "TrackingWorkshopSpecsCard.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/TrackingWorkshopSpecsCard.tsx",
+        "lines": 209,
+        "tags": [
+          "tracking",
+          "workshop",
+          "specs",
+          "card",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-TRUSTITEM",
+        "name": "TrustItem.tsx",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/TrustItem.tsx",
+        "lines": 50,
+        "tags": [
+          "trust",
+          "item",
+          "02-features"
+        ]
+      },
+      {
+        "component_id": "INT-02-USEHEROMEDIASEQUENCE",
+        "name": "useHeroMediaSequence.ts",
+        "dpn_level": "02-features",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/02-features/useHeroMediaSequence.ts",
+        "lines": 257,
+        "tags": [
+          "use",
+          "hero",
+          "media",
+          "sequence",
+          "02-features"
+        ]
+      }
+    ],
+    "03-sections": [
+      {
+        "component_id": "INT-03-ADMINCATALOGUECONTENTSECTION",
+        "name": "AdminCatalogueContentSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/AdminCatalogueContentSection.tsx",
+        "lines": 62,
+        "tags": [
+          "admin",
+          "catalogue",
+          "content",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-ADMINCATALOGUEHEADERSECTION",
+        "name": "AdminCatalogueHeaderSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/AdminCatalogueHeaderSection.tsx",
+        "lines": 27,
+        "tags": [
+          "admin",
+          "catalogue",
+          "header",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-ADMINORDERSCONTENTSECTION",
+        "name": "AdminOrdersContentSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/AdminOrdersContentSection.tsx",
+        "lines": 20,
+        "tags": [
+          "admin",
+          "orders",
+          "content",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-ADMINORDERSHEADERSECTION",
+        "name": "AdminOrdersHeaderSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/AdminOrdersHeaderSection.tsx",
+        "lines": 27,
+        "tags": [
+          "admin",
+          "orders",
+          "header",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-AUTHCARDSECTION",
+        "name": "AuthCardSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/AuthCardSection.tsx",
+        "lines": 20,
+        "tags": [
+          "auth",
+          "card",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-AUTHSPLITSECTION",
+        "name": "AuthSplitSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/AuthSplitSection.tsx",
+        "lines": 214,
+        "tags": [
+          "auth",
+          "split",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-CATALOGUE",
+        "name": "catalogue/",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/catalogue/",
+        "files": [
+          "CatalogAiInstantCtaSection.tsx",
+          "CatalogCommercialHeroSection.tsx",
+          "CatalogFacettedFiltersSection.tsx",
+          "CatalogHeaderHeroSection.tsx",
+          "CatalogNomenclatureGridSection.tsx",
+          "CatalogPillarsFeaturedSection.tsx",
+          "CatalogReassuranceSection.tsx",
+          "CatalogTopStatusBarSection.tsx",
+          "CatalogVisualCategoriesSection.tsx",
+          "index.ts"
+        ],
+        "tags": [
+          "catalogue",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-CHECKOUTFORMSECTION",
+        "name": "CheckoutFormSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/CheckoutFormSection.tsx",
+        "lines": 134,
+        "tags": [
+          "checkout",
+          "form",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-CHECKOUTHEADERSECTION",
+        "name": "CheckoutHeaderSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/CheckoutHeaderSection.tsx",
+        "lines": 80,
+        "tags": [
+          "checkout",
+          "header",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-CLIENTPROJECTSGRIDSECTION",
+        "name": "ClientProjectsGridSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/ClientProjectsGridSection.tsx",
+        "lines": 158,
+        "tags": [
+          "client",
+          "projects",
+          "grid",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-CLIENTPROJECTSHEADERSECTION",
+        "name": "ClientProjectsHeaderSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/ClientProjectsHeaderSection.tsx",
+        "lines": 92,
+        "tags": [
+          "client",
+          "projects",
+          "header",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-CONFIGURATORMAINSECTION",
+        "name": "ConfiguratorMainSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/ConfiguratorMainSection.tsx",
+        "lines": 172,
+        "tags": [
+          "configurator",
+          "main",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-DEVISDETAILSSECTION",
+        "name": "DevisDetailsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/DevisDetailsSection.tsx",
+        "lines": 217,
+        "tags": [
+          "devis",
+          "details",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-DEVISHEADERSECTION",
+        "name": "DevisHeaderSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/DevisHeaderSection.tsx",
+        "lines": 70,
+        "tags": [
+          "devis",
+          "header",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-GUIDESCONTENTSECTION",
+        "name": "GuidesContentSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/GuidesContentSection.tsx",
+        "lines": 35,
+        "tags": [
+          "guides",
+          "content",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-GUIDESHEROSECTION",
+        "name": "GuidesHeroSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/GuidesHeroSection.tsx",
+        "lines": 70,
+        "tags": [
+          "guides",
+          "hero",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-GUIDESNORMESSECTION",
+        "name": "GuidesNormesSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/GuidesNormesSection.tsx",
+        "lines": 63,
+        "tags": [
+          "guides",
+          "normes",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-GUIDESVALIDATIONSECTION",
+        "name": "GuidesValidationSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/GuidesValidationSection.tsx",
+        "lines": 21,
+        "tags": [
+          "guides",
+          "validation",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HEROSECTION",
+        "name": "HeroSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HeroSection.tsx",
+        "lines": 76,
+        "tags": [
+          "hero",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HOMECTABANNERSECTION",
+        "name": "HomeCtaBannerSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HomeCtaBannerSection.tsx",
+        "lines": 164,
+        "tags": [
+          "home",
+          "cta",
+          "banner",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HOMEGLASSACCESSORIESSECTION",
+        "name": "HomeGlassAccessoriesSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HomeGlassAccessoriesSection.tsx",
+        "lines": 169,
+        "tags": [
+          "home",
+          "glass",
+          "accessories",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HOMEHEROSECTION",
+        "name": "HomeHeroSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HomeHeroSection.tsx",
+        "lines": 67,
+        "tags": [
+          "home",
+          "hero",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HOMEINSTALLATIONPOSESECTION",
+        "name": "HomeInstallationPoseSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HomeInstallationPoseSection.tsx",
+        "lines": 185,
+        "tags": [
+          "home",
+          "installation",
+          "pose",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HOMEPROCESSSECTION",
+        "name": "HomeProcessSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HomeProcessSection.tsx",
+        "lines": 77,
+        "tags": [
+          "home",
+          "process",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HOMEPROJECTSSECTION",
+        "name": "HomeProjectsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HomeProjectsSection.tsx",
+        "lines": 132,
+        "tags": [
+          "home",
+          "projects",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HOMEREALISATIONSSECTION",
+        "name": "HomeRealisationsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HomeRealisationsSection.tsx",
+        "lines": 191,
+        "tags": [
+          "home",
+          "realisations",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HOMEREASSURANCESECTION",
+        "name": "HomeReassuranceSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HomeReassuranceSection.tsx",
+        "lines": 80,
+        "tags": [
+          "home",
+          "reassurance",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-HOMESOLUTIONSSECTION",
+        "name": "HomeSolutionsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/HomeSolutionsSection.tsx",
+        "lines": 100,
+        "tags": [
+          "home",
+          "solutions",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-POSECOMPARISONSECTION",
+        "name": "PoseComparisonSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/PoseComparisonSection.tsx",
+        "lines": 17,
+        "tags": [
+          "pose",
+          "comparison",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-POSEHEADERSECTION",
+        "name": "PoseHeaderSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/PoseHeaderSection.tsx",
+        "lines": 42,
+        "tags": [
+          "pose",
+          "header",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-POSENETWORKSECTION",
+        "name": "PoseNetworkSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/PoseNetworkSection.tsx",
+        "lines": 23,
+        "tags": [
+          "pose",
+          "network",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-PRODUCT-ECOSYSTEM",
+        "name": "product-ecosystem/",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/product-ecosystem/",
+        "files": [
+          "index.ts"
+        ],
+        "tags": [
+          "product",
+          "ecosystem",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-PRODUCTASSISTANCESECTION",
+        "name": "ProductAssistanceSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/ProductAssistanceSection.tsx",
+        "lines": 64,
+        "tags": [
+          "product",
+          "assistance",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-PRODUCTECOSYSTEMANDPURCHASESECTION",
+        "name": "ProductEcosystemAndPurchaseSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/ProductEcosystemAndPurchaseSection.tsx",
+        "lines": 290,
+        "tags": [
+          "product",
+          "ecosystem",
+          "and",
+          "purchase",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-PRODUCTHEROSECTION",
+        "name": "ProductHeroSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/ProductHeroSection.tsx",
+        "lines": 94,
+        "tags": [
+          "product",
+          "hero",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-PRODUCTTABSSECTION",
+        "name": "ProductTabsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/ProductTabsSection.tsx",
+        "lines": 83,
+        "tags": [
+          "product",
+          "tabs",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-REALISATIONSBOTTOMCTASECTION",
+        "name": "RealisationsBottomCtaSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/RealisationsBottomCtaSection.tsx",
+        "lines": 26,
+        "tags": [
+          "realisations",
+          "bottom",
+          "cta",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-REALISATIONSGRIDSECTION",
+        "name": "RealisationsGridSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/RealisationsGridSection.tsx",
+        "lines": 168,
+        "tags": [
+          "realisations",
+          "grid",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-REALISATIONSHEROSECTION",
+        "name": "RealisationsHeroSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/RealisationsHeroSection.tsx",
+        "lines": 50,
+        "tags": [
+          "realisations",
+          "hero",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-REALISATIONSSECTION",
+        "name": "RealisationsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/RealisationsSection.tsx",
+        "lines": 80,
+        "tags": [
+          "realisations",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-SAVCONTENTSECTION",
+        "name": "SavContentSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/SavContentSection.tsx",
+        "lines": 25,
+        "tags": [
+          "sav",
+          "content",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-SAVHEADERSECTION",
+        "name": "SavHeaderSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/SavHeaderSection.tsx",
+        "lines": 27,
+        "tags": [
+          "sav",
+          "header",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-SOLUTIONHEROSECTION",
+        "name": "SolutionHeroSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/SolutionHeroSection.tsx",
+        "lines": 136,
+        "tags": [
+          "solution",
+          "hero",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-SOLUTIONREALISATIONSANDREASSURANCESECTION",
+        "name": "SolutionRealisationsAndReassuranceSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/SolutionRealisationsAndReassuranceSection.tsx",
+        "lines": 130,
+        "tags": [
+          "solution",
+          "realisations",
+          "and",
+          "reassurance",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-SOLUTIONSCOMPONENTSCATALOGSECTION",
+        "name": "SolutionsComponentsCatalogSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/SolutionsComponentsCatalogSection.tsx",
+        "lines": 310,
+        "tags": [
+          "solutions",
+          "components",
+          "catalog",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-SOLUTIONSFAMILIESCOMPARISONSECTION",
+        "name": "SolutionsFamiliesComparisonSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/SolutionsFamiliesComparisonSection.tsx",
+        "lines": 245,
+        "tags": [
+          "solutions",
+          "families",
+          "comparison",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-SOLUTIONSPECSSECTION",
+        "name": "SolutionSpecsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/SolutionSpecsSection.tsx",
+        "lines": 206,
+        "tags": [
+          "solution",
+          "specs",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-SOLUTIONVARIANTSSECTION",
+        "name": "SolutionVariantsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/SolutionVariantsSection.tsx",
+        "lines": 303,
+        "tags": [
+          "solution",
+          "variants",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-STITCHCONFIGURATORSECTION",
+        "name": "StitchConfiguratorSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/StitchConfiguratorSection.tsx",
+        "lines": 136,
+        "tags": [
+          "stitch",
+          "configurator",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-SYSTEMSGRIDSECTION",
+        "name": "SystemsGridSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/SystemsGridSection.tsx",
+        "lines": 90,
+        "tags": [
+          "systems",
+          "grid",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-TESTIMONIALSSECTION",
+        "name": "TestimonialsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/TestimonialsSection.tsx",
+        "lines": 45,
+        "tags": [
+          "testimonials",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-TRACKINGDETAILSSECTION",
+        "name": "TrackingDetailsSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/TrackingDetailsSection.tsx",
+        "lines": 39,
+        "tags": [
+          "tracking",
+          "details",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-TRACKINGHEADERSECTION",
+        "name": "TrackingHeaderSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/TrackingHeaderSection.tsx",
+        "lines": 95,
+        "tags": [
+          "tracking",
+          "header",
+          "section",
+          "03-sections"
+        ]
+      },
+      {
+        "component_id": "INT-03-TRACKINGTIMELINESECTION",
+        "name": "TrackingTimelineSection.tsx",
+        "dpn_level": "03-sections",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/03-sections/TrackingTimelineSection.tsx",
+        "lines": 34,
+        "tags": [
+          "tracking",
+          "timeline",
+          "section",
+          "03-sections"
+        ]
+      }
+    ],
+    "04-shell": [
+      {
+        "component_id": "INT-04-HEADER",
+        "name": "header/",
+        "dpn_level": "04-shell",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/04-shell/header/",
+        "files": [
+          "ConfiguratorDropdown.tsx",
+          "Header.tsx",
+          "MainNav.tsx",
+          "MegaMenu.tsx",
+          "MobileDrawer.tsx",
+          "SearchField.tsx",
+          "UtilityBar.tsx",
+          "header.types.ts",
+          "index.ts",
+          "useHeaderScroll.ts",
+          "useMegaMenu.ts"
+        ],
+        "tags": [
+          "header",
+          "04-shell"
+        ]
+      },
+      {
+        "component_id": "INT-04-LAYOUTS",
+        "name": "layouts/",
+        "dpn_level": "04-shell",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/04-shell/layouts/",
+        "files": [
+          "MainLayout.tsx",
+          "MobileAppLayout.tsx",
+          "ResponsiveView.tsx",
+          "WorkbenchLayout.tsx"
+        ],
+        "tags": [
+          "layouts",
+          "04-shell"
+        ]
+      },
+      {
+        "component_id": "INT-04-SHELLS",
+        "name": "shells/",
+        "dpn_level": "04-shell",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/04-shell/shells/",
+        "files": [
+          "CartDrawer.tsx",
+          "DevisModal.tsx",
+          "Footer.tsx",
+          "Header.tsx",
+          "MobileBottomNav.tsx",
+          "MobileDeviceFrame.tsx",
+          "MobileHeader.tsx",
+          "SnorbikStudioModal.tsx"
+        ],
+        "tags": [
+          "shells",
+          "04-shell"
+        ]
+      }
+    ],
+    "05-pages": [
+      {
+        "component_id": "INT-05-ADMINCATALOGUEPAGE",
+        "name": "AdminCataloguePage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/AdminCataloguePage.tsx",
+        "lines": 20,
+        "tags": [
+          "admin",
+          "catalogue",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-ADMINORDERSPAGE",
+        "name": "AdminOrdersPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/AdminOrdersPage.tsx",
+        "lines": 20,
+        "tags": [
+          "admin",
+          "orders",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-AUTHPAGE",
+        "name": "AuthPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/AuthPage.tsx",
+        "lines": 56,
+        "tags": [
+          "auth",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-CART",
+        "name": "cart/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/cart/",
+        "files": [
+          "MobileCartView.tsx"
+        ],
+        "tags": [
+          "cart",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-CARTPAGE",
+        "name": "CartPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/CartPage.tsx",
+        "lines": 426,
+        "tags": [
+          "cart",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-CATALOGUE",
+        "name": "catalogue/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/catalogue/",
+        "files": [
+          "MobileCatalogView.tsx"
+        ],
+        "tags": [
+          "catalogue",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-CATALOGUEPAGE",
+        "name": "CataloguePage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/CataloguePage.tsx",
+        "lines": 187,
+        "tags": [
+          "catalogue",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-CHECKOUT",
+        "name": "checkout/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/checkout/",
+        "files": [
+          "DesktopCheckoutView.tsx",
+          "MobileCheckoutView.tsx"
+        ],
+        "tags": [
+          "checkout",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-CHECKOUTPAGE",
+        "name": "CheckoutPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/CheckoutPage.tsx",
+        "lines": 45,
+        "tags": [
+          "checkout",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-CLIENTPROJECTSPAGE",
+        "name": "ClientProjectsPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/ClientProjectsPage.tsx",
+        "lines": 49,
+        "tags": [
+          "client",
+          "projects",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-CONFIGURATOR",
+        "name": "configurator/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/configurator/",
+        "files": [
+          "DesktopConfiguratorView.tsx",
+          "MobileConfiguratorView.tsx"
+        ],
+        "tags": [
+          "configurator",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-CONFIGURATORPAGE",
+        "name": "ConfiguratorPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/ConfiguratorPage.tsx",
+        "lines": 104,
+        "tags": [
+          "configurator",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-DEVIS",
+        "name": "devis/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/devis/",
+        "files": [
+          "DesktopDevisView.tsx",
+          "MobileDevisView.tsx"
+        ],
+        "tags": [
+          "devis",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-DEVISPAGE",
+        "name": "DevisPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/DevisPage.tsx",
+        "lines": 54,
+        "tags": [
+          "devis",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-FAVORITES",
+        "name": "favorites/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/favorites/",
+        "files": [
+          "MobileFavoritesView.tsx"
+        ],
+        "tags": [
+          "favorites",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-FAVORITESPAGE",
+        "name": "FavoritesPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/FavoritesPage.tsx",
+        "lines": 377,
+        "tags": [
+          "favorites",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-GEOLANDINGPAGE",
+        "name": "GeoLandingPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/GeoLandingPage.tsx",
+        "lines": 46,
+        "tags": [
+          "geo",
+          "landing",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-GUIDES",
+        "name": "guides/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/guides/",
+        "files": [
+          "DesktopGuidesView.tsx",
+          "MobileGuidesView.tsx"
+        ],
+        "tags": [
+          "guides",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-GUIDESPAGE",
+        "name": "GuidesPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/GuidesPage.tsx",
+        "lines": 38,
+        "tags": [
+          "guides",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-HOME",
+        "name": "home/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/home/",
+        "files": [
+          "DesktopHomeView.tsx",
+          "MobileHomeView.tsx"
+        ],
+        "tags": [
+          "home",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-HOMEPAGE",
+        "name": "HomePage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/HomePage.tsx",
+        "lines": 45,
+        "tags": [
+          "home",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-MOBILE",
+        "name": "mobile/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/mobile/",
+        "files": [
+          "MobileAdminCataloguePage.tsx",
+          "MobileAdminOrdersPage.tsx",
+          "MobileAuthPage.tsx",
+          "MobileCheckoutPage.tsx",
+          "MobileConfiguratorPage.tsx",
+          "MobileDevisPage.tsx",
+          "MobileGuidesPage.tsx",
+          "MobileHomePage.tsx",
+          "MobilePosePage.tsx",
+          "MobileProductPage.tsx",
+          "MobileProjectsPage.tsx",
+          "MobileRealisationsPage.tsx",
+          "MobileSavPage.tsx",
+          "MobileSolutionsPage.tsx",
+          "MobileTrackingPage.tsx"
+        ],
+        "tags": [
+          "mobile",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-NOTFOUNDPAGE",
+        "name": "NotFoundPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/NotFoundPage.tsx",
+        "lines": 77,
+        "tags": [
+          "not",
+          "found",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-ORDERTRACKINGPAGE",
+        "name": "OrderTrackingPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/OrderTrackingPage.tsx",
+        "lines": 38,
+        "tags": [
+          "order",
+          "tracking",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-PILOTIACONFIGURATORPAGE",
+        "name": "PilotIaConfiguratorPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/PilotIaConfiguratorPage.tsx",
+        "lines": 240,
+        "tags": [
+          "pilot",
+          "ia",
+          "configurator",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-POSE",
+        "name": "pose/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/pose/",
+        "files": [
+          "DesktopPoseView.tsx",
+          "MobilePoseView.tsx"
+        ],
+        "tags": [
+          "pose",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-POSEPAGE",
+        "name": "PosePage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/PosePage.tsx",
+        "lines": 38,
+        "tags": [
+          "pose",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-PRODUCT",
+        "name": "product/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/product/",
+        "files": [
+          "DesktopProductView.tsx",
+          "MobileProductView.tsx"
+        ],
+        "tags": [
+          "product",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-PRODUCTDETAILPAGE",
+        "name": "ProductDetailPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/ProductDetailPage.tsx",
+        "lines": 42,
+        "tags": [
+          "product",
+          "detail",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-PROJECTS",
+        "name": "projects/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/projects/",
+        "files": [
+          "DesktopProjectsView.tsx",
+          "MobileProjectsView.tsx"
+        ],
+        "tags": [
+          "projects",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-REALISATIONS",
+        "name": "realisations/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/realisations/",
+        "files": [
+          "DesktopRealisationsView.tsx",
+          "MobileRealisationsView.tsx"
+        ],
+        "tags": [
+          "realisations",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-REALISATIONSPAGE",
+        "name": "RealisationsPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/RealisationsPage.tsx",
+        "lines": 42,
+        "tags": [
+          "realisations",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-SAVPAGE",
+        "name": "SavPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/SavPage.tsx",
+        "lines": 20,
+        "tags": [
+          "sav",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-SOLUTIONS",
+        "name": "solutions/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/solutions/",
+        "files": [
+          "DesktopSolutionsView.tsx",
+          "MobileSolutionsView.tsx"
+        ],
+        "tags": [
+          "solutions",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-SOLUTIONSPAGE",
+        "name": "SolutionsPage.tsx",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/SolutionsPage.tsx",
+        "lines": 42,
+        "tags": [
+          "solutions",
+          "page",
+          "05-pages"
+        ]
+      },
+      {
+        "component_id": "INT-05-TRACKING",
+        "name": "tracking/",
+        "dpn_level": "05-pages",
+        "source": "Banque Interne BatiHome (Code Réel)",
+        "path": "frontend/src/presentation/05-pages/tracking/",
+        "files": [
+          "DesktopTrackingView.tsx",
+          "MobileTrackingView.tsx"
+        ],
+        "tags": [
+          "tracking",
+          "05-pages"
+        ]
+      }
+    ]
+  },
+  "total_indexed": 200
+}

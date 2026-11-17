@@ -1,0 +1,118 @@
+{
+  "bank_section": "05_STITCH_DESIGN_SYSTEM_PRESETS",
+  "version": "1.0.0",
+  "source_reference": "frontend/src/styles/tokens.css & docs/02_FRONTEND/ui/atelier_contemporain_verre_aluminium",
+  "description": "Presets de Design System inspirés de Stitch (typographie/lettres, couleurs de fond, palette primaire/secondaire, bordures et ombres) adaptables à chaque projet.",
+  "presets": {
+    "atelier_contemporain_verre_aluminium": {
+      "label": "BatiHome / Atelier Contemporain (E-Commerce & Technique)",
+      "typography": {
+        "font_display": "Inter / Plus Jakarta Sans",
+        "font_body": "Inter",
+        "font_mono": "JetBrains Mono",
+        "heading_scale": "48px / 32px / 22px"
+      },
+      "colors": {
+        "surface_canvas": "#F7F8FA",
+        "surface_card": "#FFFFFF",
+        "surface_dark": "#0B2630",
+        "color_primary": "#00323F",
+        "color_secondary": "#006A62",
+        "color_accent": "#84F5E8",
+        "text_main": "#141B2C",
+        "text_muted": "#475467",
+        "border_subtle": "#EAECF0"
+      },
+      "radius": "12px",
+      "shadow": "0 4px 8px -2px rgba(16, 24, 40, 0.1)"
+    },
+    "snorbik_studio_clair": {
+      "label": "SNORBIK Studio Clair (SaaS & Architecture)",
+      "typography": {
+        "font_display": "Plus Jakarta Sans",
+        "font_body": "Inter",
+        "font_mono": "JetBrains Mono",
+        "heading_scale": "40px / 28px / 20px"
+      },
+      "colors": {
+        "surface_canvas": "#F8FAFC",
+        "surface_card": "#FFFFFF",
+        "surface_dark": "#0F172A",
+        "color_primary": "#0284C7",
+        "color_secondary": "#059669",
+        "color_accent": "#7C3AED",
+        "text_main": "#0F172A",
+        "text_muted": "#475569",
+        "border_subtle": "#E2E8F0"
+      },
+      "radius": "12px",
+      "shadow": "0 4px 12px rgba(15, 23, 42, 0.06)"
+    },
+    "biostation_medical_dark": {
+      "label": "BioStation Pro Dark (Console IA & Scientifique)",
+      "typography": {
+        "font_display": "Inter",
+        "font_body": "Inter",
+        "font_mono": "JetBrains Mono",
+        "heading_scale": "36px / 24px / 18px"
+      },
+      "colors": {
+        "surface_canvas": "#090E1A",
+        "surface_card": "#111827",
+        "surface_dark": "#050B14",
+        "color_primary": "#10B981",
+        "color_secondary": "#06B6D4",
+        "color_accent": "#F59E0B",
+        "text_main": "#F8FAFC",
+        "text_muted": "#94A3B8",
+        "border_subtle": "#1E293B"
+      },
+      "radius": "10px",
+      "shadow": "0 8px 24px rgba(0, 0, 0, 0.35)"
+    },
+    "hotel_luxury_hospitality": {
+      "label": "Hôtellerie & Conciergerie Premium",
+      "typography": {
+        "font_display": "Playfair Display / Cormorant Garamond",
+        "font_body": "Inter",
+        "font_mono": "JetBrains Mono",
+        "heading_scale": "52px / 32px / 20px"
+      },
+      "colors": {
+        "surface_canvas": "#FAF8F5",
+        "surface_card": "#FFFFFF",
+        "surface_dark": "#1C1917",
+        "color_primary": "#78350F",
+        "color_secondary": "#B45309",
+        "color_accent": "#FDE68A",
+        "text_main": "#1C1917",
+        "text_muted": "#57534E",
+        "border_subtle": "#E7E5E4"
+      },
+      "radius": "8px",
+      "shadow": "0 6px 18px rgba(28, 25, 23, 0.08)"
+    },
+    "ecommerce_fashion_editorial": {
+      "label": "E-Commerce Vêtements & Mode Éditoriale",
+      "typography": {
+        "font_display": "DM Sans / Syne",
+        "font_body": "Inter",
+        "font_mono": "JetBrains Mono",
+        "heading_scale": "48px / 28px / 18px"
+      },
+      "colors": {
+        "surface_canvas": "#FFFFFF",
+        "surface_card": "#F9FAFB",
+        "surface_dark": "#111827",
+        "color_primary": "#111827",
+        "color_secondary": "#4F46E5",
+        "color_accent": "#EC4899",
+        "text_main": "#111827",
+        "text_muted": "#6B7280",
+        "border_subtle": "#E5E7EB"
+      },
+      "radius": "6px",
+      "shadow": "0 2px 10px rgba(17, 24, 39, 0.06)"
+    }
+  }
+}

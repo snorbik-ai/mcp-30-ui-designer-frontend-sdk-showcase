@@ -1,0 +1,52 @@
+{
+  "bank_section": "03_REACT_COMPONENTS_N1_TO_N5_CATALOG",
+  "version": "2.0.0",
+  "description": "Catalogue étendu des pièces détachées gratuites (shadcn/ui complet, Magic UI, 21st.dev, ChatKit, assistant-ui, ACP, Google ADK) classées N1 à N5.",
+  "levels": {
+    "01-primitives": [
+      {"component_id": "N1-BUTTON", "name": "Button.tsx", "source": "Banque BatiHome + shadcn/ui", "max_lines": 55, "tags": ["cta", "action", "button"]},
+      {"component_id": "N1-BADGE", "name": "Badge.tsx", "source": "Banque BatiHome + shadcn/ui", "max_lines": 45, "tags": ["status", "badge", "chip", "norme"]},
+      {"component_id": "N1-CARD", "name": "Card.tsx", "source": "Banque BatiHome + shadcn/ui", "max_lines": 55, "tags": ["container", "card", "panel"]},
+      {"component_id": "N1-INPUT", "name": "Input.tsx", "source": "Banque BatiHome + shadcn/ui", "max_lines": 55, "tags": ["form", "input", "search", "field"]},
+      {"component_id": "N1-KPI-CHIP", "name": "KpiChip.tsx", "source": "Banque BatiHome + Magic UI", "max_lines": 50, "tags": ["kpi", "metric", "telemetry"]},
+      {"component_id": "N1-SHADCN-SELECT", "name": "Select.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 60, "tags": ["select", "dropdown", "filter", "form"]},
+      {"component_id": "N1-SHADCN-DIALOG", "name": "Dialog.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 60, "tags": ["modal", "dialog", "popup"]},
+      {"component_id": "N1-SHADCN-SHEET", "name": "Sheet.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 60, "tags": ["drawer", "sheet", "slideover", "panier"]},
+      {"component_id": "N1-SHADCN-TABS", "name": "Tabs.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 55, "tags": ["tabs", "navigation", "switch"]},
+      {"component_id": "N1-SHADCN-CALENDAR", "name": "Calendar.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 60, "tags": ["calendar", "datepicker", "hotel", "reservation", "dates"]},
+      {"component_id": "N1-SHADCN-DATEPICKER", "name": "DatePicker.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 60, "tags": ["datepicker", "hotel", "booking", "dates"]},
+      {"component_id": "N1-SHADCN-CHECKBOX", "name": "Checkbox.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 45, "tags": ["checkbox", "form", "filter", "options"]},
+      {"component_id": "N1-SHADCN-SLIDER", "name": "Slider.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 50, "tags": ["slider", "range", "price", "dimensions"]},
+      {"component_id": "N1-SHADCN-SCROLLAREA", "name": "ScrollArea.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 45, "tags": ["scroll", "chat", "list", "sidebar"]},
+      {"component_id": "N1-SHADCN-TOOLTIP", "name": "Tooltip.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 45, "tags": ["tooltip", "help", "info"]},
+      {"component_id": "N1-SHADCN-SIDEBAR", "name": "Sidebar.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 60, "tags": ["sidebar", "navigation", "dashboard", "admin"]},
+      {"component_id": "N1-SHADCN-ACCORDION", "name": "Accordion.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 55, "tags": ["accordion", "faq", "collapse"]},
+      {"component_id": "N1-SHADCN-AVATAR", "name": "Avatar.tsx", "source": "shadcn@latest mcp (MIT)", "max_lines": 45, "tags": ["avatar", "user", "profile"]}
+    ],
+    "02-features": [
+      {"component_id": "N2-ACP-PILOT-PANEL", "name": "acp-pilot-panel/", "source": "OpenAI ChatKit + assistant-ui + BatiHome", "max_lines": 140, "has_controller": true, "tags": ["chat", "ai", "assistant", "copilot", "acp", "google-adk", "openai-chatkit", "concierge"]},
+      {"component_id": "N2-STEP-CONFIGURATOR", "name": "configurator-step-form/", "source": "Banque BatiHome E-Commerce", "max_lines": 160, "has_controller": true, "tags": ["wizard", "stepper", "form", "configurator", "devis"]},
+      {"component_id": "N2-CATALOG-GRID", "name": "catalogue/", "source": "Banque BatiHome + 21st.dev", "max_lines": 150, "has_controller": true, "tags": ["catalog", "ecommerce", "grid", "products", "filters", "vetement", "chambre"]},
+      {"component_id": "N2-STRUCTURED-REPORT-EDITOR", "name": "structured-report-editor/", "source": "Banque BioStation Pro", "max_lines": 165, "has_controller": true, "tags": ["report", "markdown", "pdf", "docx", "editor"]},
+      {"component_id": "N2-3D-CANVAS-VIEWER", "name": "workspace-3d-viewer/", "source": "Banque BatiHome 3D + BioStation WebGL", "max_lines": 180, "has_controller": true, "tags": ["3d", "webgl", "threejs", "visualizer", "cad"]},
+      {"component_id": "N2-SHADCN-DATATABLE", "name": "data-table/", "source": "shadcn@latest mcp + TanStack Table (MIT)", "max_lines": 170, "has_controller": true, "tags": ["datatable", "table", "admin", "orders", "saas", "dashboard"]},
+      {"component_id": "N2-BOOKING-SEARCH-BAR", "name": "booking-search-bar/", "source": "21st.dev Magic + shadcn Calendar", "max_lines": 135, "has_controller": true, "tags": ["booking", "hotel", "search", "dates", "voyageurs", "reservation"]},
+      {"component_id": "N2-CAROUSEL-GALLERY", "name": "carousel-gallery/", "source": "shadcn Carousel + 21st.dev", "max_lines": 120, "has_controller": true, "tags": ["carousel", "gallery", "photos", "hotel", "product", "vetement"]},
+      {"component_id": "N2-ANALYTICS-CHARTS", "name": "analytics-charts/", "source": "shadcn Charts / Recharts (MIT)", "max_lines": 155, "has_controller": true, "tags": ["charts", "analytics", "dashboard", "saas", "kpi"]}
+    ],
+    "03-sections": [
+      {"component_id": "N3-SPLIT-WORKBENCH-SECTION", "name": "SplitWorkbenchSection.tsx", "source": "Banque BioStation Pro + BatiHome", "max_lines": 130, "tags": ["workbench", "split-screen", "dashboard", "3-columns", "console", "ai"]},
+      {"component_id": "N3-COMMERCIAL-HERO-SECTION", "name": "CommercialHeroSection.tsx", "source": "Banque BatiHome + Magic UI", "max_lines": 120, "tags": ["hero", "landing", "vitrine", "ecommerce", "hotel"]},
+      {"component_id": "N3-CATALOG-SHOWCASE-SECTION", "name": "CatalogShowcaseSection.tsx", "source": "Banque BatiHome E-Commerce", "max_lines": 140, "tags": ["catalog-section", "facets", "showcase", "grid", "ecommerce", "hotel"]},
+      {"component_id": "N3-MAGIC-BENTO-SECTION", "name": "BentoShowcaseSection.tsx", "source": "@magicui/mcp (MIT)", "max_lines": 110, "tags": ["bento", "features", "landing", "magicui"]},
+      {"component_id": "N3-CHECKOUT-SPLIT-SECTION", "name": "CheckoutSplitSection.tsx", "source": "Banque BatiHome E-Commerce", "max_lines": 130, "tags": ["checkout", "payment", "booking", "commande"]}
+    ],
+    "04-shell": [
+      {"component_id": "N4-MAIN-LAYOUT", "name": "MainLayout.tsx", "source": "Banque BatiHome E-Commerce", "max_lines": 110, "tags": ["layout", "header", "footer", "navigation", "ecommerce", "hotel"]},
+      {"component_id": "N4-WORKBENCH-LAYOUT", "name": "WorkbenchLayout.tsx", "source": "Banque BatiHome + BioStation Pro", "max_lines": 115, "tags": ["workbench-shell", "pro-app", "fullscreen", "saas", "ai"]}
+    ],
+    "05-pages": [
+      {"component_id": "N5-DECLARATIVE-PAGE", "name": "DeclarativeAppPage.tsx", "source": "Standard DPN-IA N5", "max_lines": 65, "tags": ["page", "entry", "puzzle"]}
+    ]
+  }
+}

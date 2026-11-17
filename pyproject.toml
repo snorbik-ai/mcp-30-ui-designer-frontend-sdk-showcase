@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "30_ui_designer_frontend_sdk_mcp"
+version = "3.0.0"
+description = "MCP #30 UI Designer & Frontend SDK Builder V3.0 : Usine de Montage UI React N1-N5 (<350L), Banque 235+ pièces (200 BatiHome + shadcn + Magic UI + 21st.dev), Chasse 3 Cercles, Design System Stitch, AI Visual Prototyping (Zéro Maquette), Chat Panels IA (OpenAI ChatKit, assistant-ui) & Ponts Backend ACP / Google ADK."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ['pydantic>=2.0.0']

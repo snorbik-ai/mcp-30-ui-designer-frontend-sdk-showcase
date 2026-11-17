@@ -1,0 +1,229 @@
+{
+  "$schema": "https://snorbik.ai/schemas/mcp_hybrid_tablet_v3.0.0.json",
+  "tablet_metadata": {
+    "specification_version": "3.0.0",
+    "tool_id": "ui_designer_frontend_sdk_mcp",
+    "target_runtime": "DualDoor_MCP_and_AgentCoding",
+    "total_sections": 7,
+    "total_components": 13,
+    "doctrine": "INV-01 à INV-08 Quinti-Bloc Bipartite & Double Rôle Cognitif"
+  },
+  "sections": [
+    {
+      "section_id": "SEC_01_PROJECT_INTRO",
+      "section_name": "Cadre Global & Invariants",
+      "order": 1,
+      "components": [
+        {
+          "component_id": "CMP_01_IDENTITY",
+          "name": "Identité Officielle ui_designer_frontend_sdk_mcp",
+          "properties": {
+            "id": "ui_designer_frontend_sdk_mcp",
+            "version": "3.0.0",
+            "architecture": "Tri-Canal Clean Architecture DPN-IA N1->N5",
+            "maintainer": "Snorbik AI Industrial Ecosystem"
+          }
+        },
+        {
+          "component_id": "CMP_02_INVARIANTS",
+          "name": "8 Invariants Fondateurs Snorbik AI",
+          "properties": {
+            "INV-01": "Herméticité tri-canal (canal_mcp, canal_sdk_cli, core, tests).",
+            "INV-02": "Budget de lignes strict < 350L par fichier (cible 60-240L).",
+            "INV-03": "Restitution Digest-First et persistance sur disque (output/).",
+            "INV-04": "Zéro secret ou chemin local sensible exposé.",
+            "INV-05": "Contrats Pydantic V2 stricts dans core/domain/entities.py.",
+            "INV-06": "Preuve L4 obligatoire (6 tests pytest CLI, SDK et MCP stdio).",
+            "INV-07": "Description Quinti-Bloc Bipartite avec pipelines séquentielles exactes.",
+            "INV-08": "Double rôle : Exécuteur Déterministe & Guide Cognitif (Prompts Maîtres)."
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_02_CALLING_PROTOCOL",
+      "section_name": "Protocole d'Appel Tri-Canal & Résilience",
+      "order": 2,
+      "components": [
+        {
+          "component_id": "CMP_03_TRI_CHANNEL_MAP",
+          "name": "Cartographie des Portes d'Accès",
+          "properties": {
+            "door_1_mcp": "canal_mcp/mcp_server.py (stdio JSON-RPC 2.0 — 18 outils)",
+            "door_2_cli": "canal_sdk_cli/cli.py (terminal & CI)",
+            "door_3_sdk": "canal_sdk_cli/sdk.py (in-process < 2ms)"
+          }
+        },
+        {
+          "component_id": "CMP_04_ERROR_RECOVERY",
+          "name": "Matrice de Résilience",
+          "properties": {
+            "graceful_fallback": "Chaque outil crée ou recharge la session sans blocage FSM rigide",
+            "windows_max_path": "_safe_path(\\\\?\\) pour les artefacts longs"
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_03_GPS_TOOLS_REGISTRY",
+      "section_name": "Registre GPS des Capacités & 5 Pipelines Séquentielles",
+      "order": 3,
+      "components": [
+        {
+          "component_id": "COMP_05_OFFICIAL_PIPELINES",
+          "name": "5 Pipelines Séquentielles Conseillées (Non-Bloquantes)",
+          "properties": {
+            "pipeline_zero_maquette_visual_prototyping": [
+              "ui_designer_init_session",
+              "ui_designer_qualify_and_plan_pages",
+              "ui_designer_generate_phase1_design_prompt",
+              "ui_designer_generate_phase2_video_prompt",
+              "ui_designer_extract_design_system",
+              "ui_designer_decompose_n1_to_n5",
+              "ui_designer_hunt_parts_3_circles",
+              "ui_designer_materialize_frontend_sdk"
+            ],
+            "pipeline_usine_montage_voiture_e2e": [
+              "ui_designer_frontend_sdk_mcp_get_pipelines",
+              "ui_designer_init_session",
+              "ui_designer_qualify_and_plan_pages",
+              "ui_designer_extract_design_system",
+              "ui_designer_load_architecture_skills",
+              "ui_designer_decompose_n1_to_n5",
+              "ui_designer_hunt_parts_3_circles",
+              "ui_designer_generate_materialization_doc",
+              "ui_designer_materialize_frontend_sdk",
+              "ui_designer_generate_backend_bridge",
+              "ui_designer_audit_architecture"
+            ],
+            "pipeline_chasse_pieces_banque_express": [
+              "ui_designer_list_bank_inventory",
+              "ui_designer_decompose_n1_to_n5",
+              "ui_designer_hunt_parts_3_circles"
+            ],
+            "pipeline_backend_bridge_acp_adk": [
+              "ui_designer_init_session",
+              "ui_designer_generate_backend_bridge"
+            ],
+            "pipeline_rapide_direct": [
+              "ui_designer_frontend_sdk_mcp_run"
+            ]
+          }
+        },
+        {
+          "component_id": "CMP_06_ATOMIC_TOOLS",
+          "name": "Catalogue des 18 Outils Atomiques Déclarés",
+          "properties": {
+            "tools": [
+              "ui_designer_frontend_sdk_mcp_ping",
+              "ui_designer_frontend_sdk_mcp_get_pipelines",
+              "ui_designer_init_session",
+              "ui_designer_qualify_and_plan_pages",
+              "ui_designer_extract_design_system",
+              "ui_designer_analyze_mockup",
+              "ui_designer_load_architecture_skills",
+              "ui_designer_decompose_n1_to_n5",
+              "ui_designer_hunt_parts_3_circles",
+              "ui_designer_list_bank_inventory",
+              "ui_designer_search_bank",
+              "ui_designer_generate_materialization_doc",
+              "ui_designer_materialize_frontend_sdk",
+              "ui_designer_generate_backend_bridge",
+              "ui_designer_audit_architecture",
+              "ui_designer_generate_phase1_design_prompt",
+              "ui_designer_generate_phase2_video_prompt",
+              "ui_designer_frontend_sdk_mcp_run"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_04_CONTRACTS_SCHEMA",
+      "section_name": "Contrats Pydantic & Banque 235+ Pièces",
+      "order": 4,
+      "components": [
+        {
+          "component_id": "CMP_07_PYDANTIC_SCHEMAS",
+          "name": "Schémas Typés & Registres Bank",
+          "properties": {
+            "input_schema": "core/domain/entities.py::ToolRequestDto",
+            "output_schema": "core/domain/entities.py::ToolResponseDto",
+            "bank_registers": "01_external_ui_mcp_servers, 02_ai_chat_panels_and_protocols, 03_react_components_n1_to_n5_catalog, 04_project_archetypes_and_page_sequences, 05_stitch_design_system_presets, 06_internal_batihome_200_index"
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_05_GOLDEN_ORACLES",
+      "section_name": "Oracles Dorés & Preuves de Test Scellées",
+      "order": 5,
+      "components": [
+        {
+          "component_id": "CMP_08_TEST_VECTOR_DIGEST",
+          "name": "Vecteurs de Test Canoniques",
+          "properties": {
+            "hotel_e2e_reuse_min": 70.0,
+            "zero_maquette_screens": 6,
+            "zero_maquette_video_slots": 6,
+            "expected_tools_count": 18
+          }
+        },
+        {
+          "component_id": "CMP_09_SEALED_HASHES",
+          "name": "Empreinte Scellée",
+          "properties": {
+            "golden_output_file": "canal_mcp/mcp_agent_coding/golden_output_scelle.json"
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_06_PERFORMANCE_SLA",
+      "section_name": "SLA de Performance & Budgets",
+      "order": 6,
+      "components": [
+        {
+          "component_id": "CMP_10_BUDGET_LIMITS",
+          "name": "Limites de Budget & Lignes",
+          "properties": {
+            "max_file_lines": 350,
+            "target_file_lines": "60-240",
+            "execution_timeout_sec": 30
+          }
+        },
+        {
+          "component_id": "CMP_11_METRICS",
+          "name": "Métriques de Performance",
+          "properties": {
+            "memory_max_mb": 512,
+            "latency_sdk_ms": 2.0
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_07_DYNAMIC_HISTORY",
+      "section_name": "Historique Dynamique & Versions",
+      "order": 7,
+      "components": [
+        {
+          "component_id": "CMP_12_CHANGELOG",
+          "name": "Changelog Officiel",
+          "properties": {
+            "v1.0.0": "Standardisation initiale Tri-Canal & Tablette 7S/13C.",
+            "v2.0.0": "Analyse maquette, matérialisation dynamique N1-N5 & pont FastAPI ACP/ADK/ChatKit.",
+            "v3.0.0": "Banque 235+ pièces (200 BatiHome), 5 Archétypes, 5 Presets Stitch, Chasse 3 Cercles & AI Visual Prototyping (18 outils)."
+          }
+        },
+        {
+          "component_id": "CMP_13_SKILLS_EMBEDDED",
+          "name": "6 Skills ADN Embarqués",
+          "properties": {
+            "skills": "01-frontend-puzzle-sdk-architecture, 02-backend-ddd-agent-bridge, 03-mcp-hybrid-tri-canal-standard, 04-ui-fabrication-session-workflow, 05-snorbik-infographic-designer, 06-ai-visual-prototyping"
+          }
+        }
+      ]
+    }
+  ]
+}

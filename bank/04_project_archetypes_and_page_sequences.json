@@ -1,0 +1,154 @@
+{
+  "bank_section": "04_PROJECT_ARCHETYPES_AND_PAGE_SEQUENCES",
+  "version": "1.0.0",
+  "description": "Référentiel des types de projets web/IA, cahier des charges des pages, diagrammes de séquence par page et pièces N1-N5 requises pour l'usine de montage.",
+  "archetypes": {
+    "ecommerce_simple": {
+      "label": "E-Commerce Vitrine & Panier Rapide",
+      "keywords": ["boutique", "vetement", "fashion", "shop", "produit", "panier", "simple"],
+      "pages": [
+        {
+          "page_id": "PAGE-HOME",
+          "name": "Accueil & Collections",
+          "content": ["Header + Panier", "Hero Collection", "Grille Produits Vedettes", "Preuves Sociales / Avis", "Footer"],
+          "sequence": ["1. Utilisateur arrive sur /", "2. Filtre par catégorie", "3. Ajoute au panier (CartContext)", "4. Ouvre CartDrawer"],
+          "required_parts": {
+            "01-primitives": ["Button", "Badge", "Card", "Input"],
+            "02-features": ["CatalogFilterBar", "CatalogProductCard", "CartDrawer", "AcpPilotPanel"],
+            "03-sections": ["CommercialHeroSection", "CatalogShowcaseSection", "TestimonialsSection"],
+            "04-shell": ["MainLayout", "Header", "Footer"],
+            "05-pages": ["HomePage"]
+          }
+        },
+        {
+          "page_id": "PAGE-PRODUCT",
+          "name": "Fiche Produit & Variantes",
+          "content": ["Galerie Photos", "Sélecteur Taille/Couleur", "Prix & Stock", "Bouton Ajout Panier"],
+          "sequence": ["1. Clic sur produit", "2. Choix variante (taille/couleur)", "3. Mise à jour prix/stock", "4. Ajout au panier"],
+          "required_parts": {
+            "01-primitives": ["Button", "Badge", "Select"],
+            "02-features": ["ProductGalleryViewer", "ProductVariantsSelector", "ProductDownloadCta"],
+            "03-sections": ["ProductHeroSection", "ProductTabsSection"],
+            "04-shell": ["MainLayout"],
+            "05-pages": ["ProductDetailPage"]
+          }
+        },
+        {
+          "page_id": "PAGE-CHECKOUT",
+          "name": "Tunnel de Commande & Paiement",
+          "content": ["Coordonnées Livraison", "Choix Paiement", "Récapitulatif Financier", "Confirmation"],
+          "sequence": ["1. Ouverture /checkout", "2. Saisie adresse", "3. Validation paiement", "4. Création commande & suivi"],
+          "required_parts": {
+            "01-primitives": ["Button", "Input", "Card"],
+            "02-features": ["CheckoutDeliveryDetailsForm", "CheckoutPaymentMethodSelector", "CheckoutFinancialSummaryRail"],
+            "03-sections": ["CheckoutSplitSection"],
+            "04-shell": ["MainLayout"],
+            "05-pages": ["CheckoutPage"]
+          }
+        }
+      ]
+    },
+    "ecommerce_complexe": {
+      "label": "E-Commerce Technique Sur-Mesure & Configurateur IA",
+      "keywords": ["configurateur", "devis", "3d", "sur-mesure", "technique", "complexe", "batiment"],
+      "pages": [
+        {
+          "page_id": "PAGE-HOME",
+          "name": "Vitrine Technique + Pilote IA",
+          "content": ["MegaMenu", "Hero + Barre Prompt IA", "Systèmes & Gammes", "Réalisations & Avis"],
+          "sequence": ["1. Visiteur saisit besoin dans PromptBar", "2. Redirection vers Configurateur pré-rempli"],
+          "required_parts": {
+            "01-primitives": ["Button", "Badge", "Card", "Input", "KpiChip"],
+            "02-features": ["HeroAiPilotBar", "PromptBar", "AcpPilotPanel"],
+            "03-sections": ["CommercialHeroSection", "SystemsGridSection"],
+            "04-shell": ["MainLayout", "Header"],
+            "05-pages": ["HomePage"]
+          }
+        },
+        {
+          "page_id": "PAGE-CONFIGURATOR",
+          "name": "Atelier Configurateur 3D + Copilote IA",
+          "content": ["Stepper Multi-Étapes", "Canvas 2D/3D WebGL", "Panneau Chat IA (ACP/ADK)", "Rail Chiffrage Temps Réel"],
+          "sequence": ["1. Choix forme & cotes", "2. Calcul déterministe SQL/Normes", "3. Rendu 3D live", "4. Génération Devis PDF"],
+          "required_parts": {
+            "01-primitives": ["Button", "Badge", "Input", "KpiChip", "Slider"],
+            "02-features": ["ConfiguratorStepForm", "Configurator3DWorkspace", "AcpPilotPanel", "DevisBreakdownTable"],
+            "03-sections": ["SplitWorkbenchSection"],
+            "04-shell": ["WorkbenchLayout", "DevisModal"],
+            "05-pages": ["ConfiguratorPage"]
+          }
+        }
+      ]
+    },
+    "hotel_reservation": {
+      "label": "Plateforme Hôtelière & Conciergerie IA",
+      "keywords": ["hotel", "chambre", "reservation", "concierge", "booking", "sejour", "spa", "voyage"],
+      "pages": [
+        {
+          "page_id": "PAGE-HOTEL-HOME",
+          "name": "Accueil Hôtel & Moteur de Disponibilité",
+          "content": ["Hero Hôtelier", "Barre Recherche Dates/Voyageurs", "Galerie Chambres & Suites", "Services & Conciergerie IA"],
+          "sequence": ["1. Saisie dates + nb voyageurs", "2. Appel disponibilité", "3. Affichage chambres & tarifs", "4. Conversation Concierge IA"],
+          "required_parts": {
+            "01-primitives": ["Button", "Badge", "Card", "Calendar", "DatePicker", "Select"],
+            "02-features": ["BookingSearchBar", "RoomCatalogGrid", "AcpPilotPanel", "CarouselGallery"],
+            "03-sections": ["CommercialHeroSection", "CatalogShowcaseSection", "TestimonialsSection"],
+            "04-shell": ["MainLayout", "Header", "Footer"],
+            "05-pages": ["HotelHomePage"]
+          }
+        },
+        {
+          "page_id": "PAGE-BOOKING",
+          "name": "Réservation & Itinéraire Sur-Mesure",
+          "content": ["Détails Chambre", "Options Spa/Transport", "Carte Alentours", "Paiement & Confirmation"],
+          "sequence": ["1. Sélection chambre", "2. Ajout options services", "3. Validation réservation", "4. Envoi confirmation"],
+          "required_parts": {
+            "01-primitives": ["Button", "Input", "Checkbox", "Badge"],
+            "02-features": ["CheckoutDeliveryDetailsForm", "CheckoutFinancialSummaryRail", "AcpPilotPanel"],
+            "03-sections": ["SplitWorkbenchSection"],
+            "04-shell": ["MainLayout"],
+            "05-pages": ["BookingCheckoutPage"]
+          }
+        }
+      ]
+    },
+    "ai_agent_console": {
+      "label": "Console Workbench IA (Chat Panel OpenAI ChatKit / assistant-ui + ACP / Google ADK)",
+      "keywords": ["agent", "ia", "chat", "chatkit", "acp", "adk", "assistant", "console", "workbench", "medical", "sdk"],
+      "pages": [
+        {
+          "page_id": "PAGE-AI-WORKBENCH",
+          "name": "Station de Travail Agentique 3 Zones",
+          "content": ["Rail Sessions & Référentiels (320px)", "Zone Centrale Interactive (3D / Tableau / Rapport)", "Chat Panel IA (OpenAI ChatKit / assistant-ui)"],
+          "sequence": ["1. Création/sélection session", "2. Envoi instruction ACP ou Google ADK", "3. Streaming pensée + Tool Calls JSON", "4. Affichage structuré & Export"],
+          "required_parts": {
+            "01-primitives": ["Button", "Badge", "Card", "Tabs", "ScrollArea", "Tooltip"],
+            "02-features": ["AcpPilotPanel", "StructuredReportEditor", "Workspace3DViewer", "DataTable"],
+            "03-sections": ["SplitWorkbenchSection"],
+            "04-shell": ["WorkbenchLayout"],
+            "05-pages": ["DeclarativeWorkspacePage"]
+          }
+        }
+      ]
+    },
+    "saas_dashboard": {
+      "label": "Dashboard SaaS & Analytics B2B",
+      "keywords": ["saas", "dashboard", "admin", "analytics", "crm", "tableau", "kpi", "gestion"],
+      "pages": [
+        {
+          "page_id": "PAGE-DASHBOARD",
+          "name": "Vue d'Ensemble KPI & Tableaux",
+          "content": ["Sidebar Navigation", "Cartes KPI", "Graphiques Temps Réel", "DataTable Filtrable", "Assistant IA Latéral"],
+          "sequence": ["1. Chargement métriques", "2. Filtrage période/catégorie", "3. Tri tableau", "4. Questionnement IA"],
+          "required_parts": {
+            "01-primitives": ["Button", "Badge", "Card", "KpiChip", "Sidebar", "Select"],
+            "02-features": ["DataTable", "AnalyticsCharts", "AcpPilotPanel", "AdminOrdersStatsBar"],
+            "03-sections": ["SplitWorkbenchSection"],
+            "04-shell": ["WorkbenchLayout"],
+            "05-pages": ["DashboardPage"]
+          }
+        }
+      ]
+    }
+  }
+}

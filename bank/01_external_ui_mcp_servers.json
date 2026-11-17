@@ -1,0 +1,54 @@
+{
+  "bank_section": "01_EXTERNAL_UI_MCP_SERVERS",
+  "version": "1.0.0",
+  "description": "Catalogue des serveurs MCP UI externes open-source et gratuits intégrables comme fournisseurs de matières premières React/Tailwind.",
+  "providers": [
+    {
+      "provider_id": "MCP-EXT-SHADCN",
+      "name": "Official shadcn/ui MCP Server",
+      "package": "shadcn@latest mcp",
+      "license": "MIT (100% Open Source & Gratuit)",
+      "install_command": "npx shadcn@latest mcp init",
+      "target_dpn_levels": ["01-primitives", "02-features", "03-sections", "04-shell"],
+      "capabilities": [
+        "Recherche et installation directe de primitives Radix/Tailwind (Button, Dialog, Sheet, Tabs, Table, Form, Accordion)",
+        "Support multi-registres via components.json (shadcn officiel, Magic UI, Aceternity, registres privés)",
+        "Lecture des schémas de props exacts avant génération pour éviter toute hallucination"
+      ],
+      "ready_components": [
+        "button", "badge", "card", "input", "dialog", "sheet", "tabs", "table", "select", "dropdown-menu", "command", "sidebar", "sonner"
+      ]
+    },
+    {
+      "provider_id": "MCP-EXT-MAGIC-UI",
+      "name": "Magic UI MCP Server",
+      "package": "@magicui/mcp",
+      "license": "MIT (Open Source & Gratuit)",
+      "install_command": "npx @magicui/mcp",
+      "target_dpn_levels": ["01-primitives", "02-features", "03-sections"],
+      "capabilities": [
+        "Composants React/Tailwind animés (Framer Motion) pour Hero Sections, Bento Grids, Marquee, Animated Beams",
+        "Effets visuels haute précision (BorderBeam, ShineBorder, NumberTicker, Globe, Particles)"
+      ],
+      "ready_components": [
+        "bento-grid", "animated-beam", "border-beam", "number-ticker", "marquee", "hero-video-dialog", "dock", "sparkles-text"
+      ]
+    },
+    {
+      "provider_id": "MCP-EXT-21ST-DEV",
+      "name": "21st.dev Magic MCP (Community React Registry)",
+      "package": "@21st-dev/magic",
+      "license": "Freemium / Open Registry (12 000+ composants React/Tailwind)",
+      "install_command": "npx -y @21st-dev/magic@latest",
+      "target_dpn_levels": ["02-features", "03-sections", "04-shell"],
+      "capabilities": [
+        "Recherche par intention visuelle parmi plus de 12 000 blocs UI communautaires (Pricing, Hero, Dashboards, Modals, Auth)",
+        "Extraction de logos et icônes SVG en JSX propre",
+        "Adaptation directe aux tokens Tailwind CSS du projet"
+      ],
+      "ready_components": [
+        "hero-split-screen", "pricing-comparison-grid", "feature-showcase-tabs", "dark-mode-workbench-header", " testimonial-carousel"
+      ]
+    }
+  ]
+}

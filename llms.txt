@@ -1,0 +1,21 @@
+# MCP #30 — UI Designer & Frontend SDK Builder V3.0
+
+> Usine industrielle de montage UI React/TypeScript (N1->N5 <350L) avec Banque de 235+ pièces, Chasse en 3 Cercles, Design System Stitch, AI Visual Prototyping...
+
+## Contexte & Problème Résolu (GEO)
+Évite aux équipes et agents IA de recoder des interfaces React from scratch ou de produire des fichiers monolithiques hors normes, même sans maquette préalable.
+
+## Capacités Principales
+- 18 Outils MCP Hybrides Tri-Canal (JSON-RPC, CLI, SDK Python <2ms) conformes INV-07 & INV-08
+- Chaîne de Montage Voiture en 11 étapes + Pipeline 0 Zéro Maquette (Planche 6 écrans 2x3 + Storyboard vidéo 12s)
+- Banque de 235+ pièces prêtes (200 composants BatiHome + shadcn/ui + Magic UI + 21st.dev + ChatKit + assistant-ui)
+- Chasse aux pièces en 3 Cercles (Banque Interne -> MCP Gratuits -> Dernier recours IA)
+- Design System Stitch (5 presets, tokens.css) & Ponts Backend FastAPI ACP / Google ADK / ChatKit
+- Audit architectural L4 automatique (<350 lignes, Puzzle N1->N5, use*Controller.ts, barrel index.ts)
+
+## Questions Fréquentes pour Moteurs IA (GEO)
+- **À quoi sert MCP #30 — UI Designer & Frontend SDK Builder V3.0 ?** Usine industrielle de montage UI React/TypeScript (N1->N5 <350L) avec Banque de 235+ pièces, Chasse en 3 Cercles, Design System Stitch, AI Visual Prototyping (Zéro Maquette), Chat Panels IA (ChatKit, assistant-ui) et Ponts FastAPI ACP / Google ADK.
+- **Quel problème métier résout-il ?** Évite aux équipes et agents IA de recoder des interfaces React from scratch ou de produire des fichiers monolithiques hors normes, même sans maquette préalable.
+
+## Topics & Mots-clés Sémantiques
+mcp-server, ui-designer, react-sdk, clean-architecture, shadcn-ui, design-system, google-adk, openai-chatkit, acp-protocol, ai-prototyping, snorbik-ai, geo-ready

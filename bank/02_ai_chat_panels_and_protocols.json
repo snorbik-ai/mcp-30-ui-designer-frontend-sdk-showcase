@@ -1,0 +1,67 @@
+{
+  "bank_section": "02_AI_CHAT_PANELS_AND_PROTOCOLS",
+  "version": "1.0.0",
+  "description": "Banque des panneaux de chat IA prêts à l'emploi (OpenAI ChatKit, assistant-ui, CopilotKit) et des protocoles de communication Agent (ACP, Google ADK, AG-UI, MCP).",
+  "chat_panels": [
+    {
+      "panel_id": "CHAT-OPENAI-CHATKIT",
+      "name": "OpenAI ChatKit Official React Panel",
+      "package": "@openai/chatkit-react",
+      "license": "Open Source / Official OpenAI UI SDK",
+      "dpn_placement": "02-features/acp-pilot-panel/partials/OpenAiChatKitStreamPartial.tsx",
+      "features": [
+        "Streaming temps réel des réponses de l'agent IA",
+        "Gestion native des threads de conversation et pièces jointes (PDF, images, VCF)",
+        "Visualisation intégrée des appels d'outils (Tool Invocations) et widgets interactifs",
+        "Découplage total UI Frontend / Backend Agent (sécurité des clés API côté serveur)"
+      ]
+    },
+    {
+      "panel_id": "CHAT-ASSISTANT-UI",
+      "name": "assistant-ui (The shadcn/ui for AI Chat)",
+      "package": "@assistant-ui/react",
+      "license": "MIT (100% Open Source & Gratuit)",
+      "dpn_placement": "02-features/acp-pilot-panel/partials/AssistantUiThreadPartial.tsx",
+      "features": [
+        "Primitives Radix + Tailwind entièrement personnalisables selon notre Design System",
+        "Rendu Markdown, LaTeX, coloration syntaxique et cartes d'outils JSON structurés (makeAssistantToolUI)",
+        "Compatible nativement avec tout backend SSE, ACP, Google ADK ou LangGraph"
+      ]
+    },
+    {
+      "panel_id": "CHAT-SNORBIK-PILOT-PANEL",
+      "name": "Snorbik Desktop & Mobile Pilot Panel (BatiHome / BioStation Certified)",
+      "package": "@snorbik/ui-pilot-panel",
+      "license": "Souverain Snorbik AI",
+      "dpn_placement": "02-features/desktop-pilot-panel/",
+      "features": [
+        "Découpage certifié < 220 lignes : DesktopPilotPanel.tsx + useDesktopPilotController.ts + 4 partials",
+        "Support des Quick Chips métier, cartes de mise à jour de configuration en direct et sélecteur de cerveau IA",
+        "Mode tiroir mobile (MobileCopilotBottomSheet) + Rail latéral desktop (320px/360px)"
+      ]
+    }
+  ],
+  "agent_protocols": [
+    {
+      "protocol_id": "PROTO-ACP",
+      "name": "ACP (Agent Communication Protocol)",
+      "standard": "Open Standard REST + SSE (/acp/v1/runs)",
+      "sdk_module": "src/sdk/acp/acpClient.ts",
+      "description": "Protocole standardisé pour faire communiquer le frontend React avec n'importe quel agent IA (création de run, streaming d'événements agent.thought, tool.call, message.delta, annulation et reprise de session)."
+    },
+    {
+      "protocol_id": "PROTO-GOOGLE-ADK",
+      "name": "Google ADK (Agent Development Kit Bridge)",
+      "standard": "Google ADK Web / SSE Runner (/apps/{app}/users/{user}/sessions & /run_sse)",
+      "sdk_module": "src/sdk/google-adk/googleAdkBridge.ts",
+      "description": "Connecteur direct permettant d'utiliser un agent ou un système multi-agents Google ADK (Python/TS) équipé de nos serveurs MCP comme moteur du panneau de chat React."
+    },
+    {
+      "protocol_id": "PROTO-AG-UI",
+      "name": "AG-UI (Agent-User Interaction Event Stream)",
+      "standard": "Event-based JSON Stream",
+      "sdk_module": "src/sdk/ag-ui/agUiAdapter.ts",
+      "description": "Traduit les sorties JSON structurées des outils MCP en composants visuels React interactifs (cartes de devis, tableaux comparatifs, viewer 3D, éditeur de rapport)."
+    }
+  ]
+}
