@@ -1,26 +1,21 @@
-"""Assembleur Dynamique du SDK Frontend V2.0 (React N1-N5 + ACP + Google ADK + ChatKit + Delta Custom) & Auditeur < 350L."""
+"""Assembleur Dynamique du SDK Frontend V3.0 (React N1-N5 + Cercle 1 Réel + Stitch + ACP/ADK) & Auditeur < 350L."""
 from __future__ import annotations
 
 import json
-import os
 from pathlib import Path
 from typing import Dict, Any, List
-
-
-def _safe_path(p: Path) -> Path:
-    resolved = str(p.resolve())
-    if os.name == "nt" and not resolved.startswith("\\\\?\\"):
-        return Path("\\\\?\\" + resolved)
-    return p
+from core.infrastructure.path_utils import safe_path as _safe_path
+from core.infrastructure.circle1_copier import Circle1AndPagesMaterializer
 
 
 class SdkBuilderAndAuditor:
-    """Matérialise physiquement les pièces de la Banque ET les pièces sur-mesure du plan dans N1-N5."""
+    """Matérialise physiquement les pièces Cercle 1, les pages qualifiées N5 et les pièces sur-mesure."""
 
     def __init__(self, tool_root: Path | None = None):
         self.tool_root = tool_root or Path(__file__).resolve().parents[2]
         self.sessions_dir = self.tool_root / "output" / "sessions"
         self.templates_dir = self.tool_root / "bank" / "templates"
+        self.circle1_copier = Circle1AndPagesMaterializer(self.tool_root)
 
     def materialize_frontend_sdk(self, params: Dict[str, Any]) -> Dict[str, Any]:
         session_id = params.get("session_id", "ui-sess-default")
@@ -88,10 +83,12 @@ class SdkBuilderAndAuditor:
             ),
         )
 
-        # 1.5 Copie du Design System Stitch (tokens.css) dans src/styles/tokens.css
-        session_tokens = s_dir / "tokens.css"
+        # 1.5 Copie du Design System Stitch (tokens.css) dans src/styles/tokens.css + index.css
+        s_dir_safe = _safe_path(s_dir)
+        session_tokens = s_dir_safe / "tokens.css"
         if session_tokens.exists():
             _write("styles/tokens.css", session_tokens.read_text(encoding="utf-8"))
+            _write("styles/index.css", "@import './tokens.css';\n")
 
         # 2. Copie des connecteurs protocolaires ACP & Google ADK depuis la Banque
         for tpl_src, dst_rel in [
@@ -138,14 +135,20 @@ class SdkBuilderAndAuditor:
             "export * from './AcpPilotPanel';\nexport * from './useAcpPilotController';",
         )
 
-        # 5. Génération DYNAMIQUE de tous les composants Sur-Mesure (CUSTOM_AI_TO_BUILD) du materialization_plan.json
-        plan_file = s_dir / "materialization_plan.json"
+        # 5. Génération DYNAMIQUE Cercle 1 Réel + Delta Sur-Mesure (CUSTOM_AI_TO_BUILD) du materialization_plan.json
+        plan_file = s_dir_safe / "materialization_plan.json"
         custom_built: List[str] = []
+        circle1_copied: List[str] = []
         if plan_file.exists():
             plan_data = json.loads(plan_file.read_text(encoding="utf-8"))
+            circle1_copied = self.circle1_copier.copy_circle1_parts(plan_data, src_dir)
+            generated_files.extend(circle1_copied)
             for item in plan_data.get("items", []):
-                if item.get("category") == "CUSTOM_AI_TO_BUILD":
-                    comp_name = item["name"].strip("/").replace("Feature", "") or "CustomDomain"
+                if item.get("category") != "CUSTOM_AI_TO_BUILD":
+                    continue
+                lvl = item.get("dpn_level", "02-features")
+                comp_name = item["name"].strip("/").replace(".tsx", "").replace("Feature", "") or "CustomDomain"
+                if lvl == "02-features":
                     folder = f"presentation/02-features/{comp_name}"
                     _write(
                         f"{folder}/use{comp_name}Controller.ts",
@@ -163,9 +166,14 @@ class SdkBuilderAndAuditor:
                         f"{folder}/index.ts",
                         f"export * from './{comp_name}Feature';\nexport * from './use{comp_name}Controller';",
                     )
-                    custom_built.append(comp_name)
+                else:
+                    _write(
+                        f"presentation/{lvl}/{comp_name}.tsx",
+                        f"import React from 'react';\nexport const {comp_name}: React.FC<{{ children?: React.ReactNode }}> = ({{ children }}) => (\n  <div className=\"p-3\">{comp_name} {{children}}</div>\n);",
+                    )
+                custom_built.append(comp_name)
 
-        # 6. Niveaux 3, 4 et 5
+        # 6. Niveaux 3, 4 et 5 (dont pages qualifiées issues de workflow_planner)
         _write(
             "presentation/03-sections/SplitWorkbenchSection.tsx",
             "import React from 'react';\nimport { AcpPilotPanel } from '../02-features/acp-pilot-panel';\nexport const SplitWorkbenchSection: React.FC<{ children?: React.ReactNode }> = ({ children }) => (\n  <section className=\"grid grid-cols-12 h-full w-full\"><main className=\"col-span-8 p-4\">{children}</main><div className=\"col-span-4 h-full\"><AcpPilotPanel /></div></section>\n);",
@@ -176,14 +184,22 @@ class SdkBuilderAndAuditor:
         )
         _write(
             "presentation/05-pages/DeclarativeWorkspacePage.tsx",
-            "import React from 'react';\nimport { WorkbenchLayout } from '../04-shell/WorkbenchLayout';\nimport { SplitWorkbenchSection } from '../03-sections/SplitWorkbenchSection';\nexport const DeclarativeWorkspacePage: React.FC = () => (\n  <WorkbenchLayout title=\"Snorbik UI SDK Workspace V2.0 (ACP · Google ADK · ChatKit)\"><SplitWorkbenchSection><div className=\"p-4\">Zone Métier Configurée</div></SplitWorkbenchSection></WorkbenchLayout>\n);",
+            "import React from 'react';\nimport { WorkbenchLayout } from '../04-shell/WorkbenchLayout';\nimport { SplitWorkbenchSection } from '../03-sections/SplitWorkbenchSection';\nexport const DeclarativeWorkspacePage: React.FC = () => (\n  <WorkbenchLayout title=\"Snorbik UI SDK Workspace V3.0 (ACP · Google ADK · ChatKit)\"><SplitWorkbenchSection><div className=\"p-4\">Zone Métier Configurée</div></SplitWorkbenchSection></WorkbenchLayout>\n);",
         )
+        state_file = s_dir_safe / "session_state.json"
+        qualified_pages: List[str] = []
+        if state_file.exists():
+            state_data = json.loads(state_file.read_text(encoding="utf-8"))
+            qualified_pages = self.circle1_copier.materialize_qualified_pages(state_data, src_dir)
+            generated_files.extend(qualified_pages)
 
         audit = self.audit_architecture({"session_id": session_id, "target_dir": str(raw_root)})
         return {
             "session_id": session_id,
             "sdk_root_dir": str(raw_root),
             "generated_files_count": len(generated_files),
+            "circle1_copied_count": len(circle1_copied),
+            "qualified_pages_materialized": qualified_pages,
             "custom_features_materialized": custom_built,
             "generated_files": generated_files,
             "architecture_audit": audit,

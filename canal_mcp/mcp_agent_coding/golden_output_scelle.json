@@ -1,10 +1,15 @@
 {
-  "test_vector_id": "VEC-UI_DESIGNER_FRONTEND_SDK_MCP-GOLDEN-01",
+  "test_vector_id": "VEC-UI_DESIGNER_FRONTEND_SDK_MCP-GOLDEN-V3",
   "component": "ui_designer_frontend_sdk_mcp",
+  "version": "3.0.0",
   "oracle_digest": {
     "status": "SUCCESS",
-    "action": "execute",
-    "processed": true
+    "tools_count": 18,
+    "pipelines_count": 5,
+    "skills_count": 6,
+    "bank_ready_parts_min": 235,
+    "zero_maquette_screens": 6,
+    "line_budget_ceiling": 350
   },
   "invariants_verified": [
     "INV-01",
@@ -13,7 +18,8 @@
     "INV-04",
     "INV-05",
     "INV-06",
-    "INV-07"
+    "INV-07",
+    "INV-08"
   ],
   "sha256_seal": "d56af76ce55c4eb705ca2add19ec5db59fa36ac12d9bd3a72afeb74a4dab4264"
 }

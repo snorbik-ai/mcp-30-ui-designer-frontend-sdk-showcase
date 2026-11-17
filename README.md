@@ -124,7 +124,7 @@ Tous les outils respectent le standard **Quinti-Bloc Bipartite (`INV-07`)** et l
     }
   }
   ```
-- **Tests L4 (`6 passed`) :**
+- **Tests L4 (`7 passed`) :**
   ```bash
   pytest tests/ -v
   ```

@@ -1,16 +1,9 @@
 """Générateur du Pont Backend FastAPI DDD (ACP, Google ADK, OpenAI ChatKit) — MCP #30 V2.0."""
 from __future__ import annotations
 
-import os
 from pathlib import Path
 from typing import Dict, Any, List
-
-
-def _safe_path(p: Path) -> Path:
-    resolved = str(p.resolve())
-    if os.name == "nt" and not resolved.startswith("\\\\?\\"):
-        return Path("\\\\?\\" + resolved)
-    return p
+from core.infrastructure.path_utils import safe_path as _safe_path
 
 
 class BackendBridgeGenerator:

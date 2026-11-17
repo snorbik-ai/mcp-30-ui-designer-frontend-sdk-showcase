@@ -54,7 +54,7 @@
 ```bash
 pytest tests/ -v
 ```
-Suite L4 validée : **6/6 tests passants** (`SDK`, `Banque 235+`, `Scénario Hôtel 3 Cercles`, `Scénario Zéro Maquette Bio-Atlas`, `MCP JSON-RPC 18 outils INV-07`, `CLI`).
+Suite L4 validée : **7/7 tests passants** (`SDK`, `Banque 235+`, `Scénario Hôtel 3 Cercles + Pages N5`, `Scénario Zéro Maquette Bio-Atlas`, `MCP JSON-RPC 18 outils INV-07`, `CLI`, `Serveur stdio JSON-RPC réel`).
 
 ---
 *Documentation complète : [`README.md`](README.md) · Pack GEO/IA : [`llms.txt`](llms.txt) · Standard Showcase Zéro Secret.*

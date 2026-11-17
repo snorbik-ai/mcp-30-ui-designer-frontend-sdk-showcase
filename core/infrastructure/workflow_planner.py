@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from typing import Dict, Any, List
 from core.infrastructure.bank_repository import BankRepository
+from core.infrastructure.path_utils import safe_path
 
 
 class WorkflowPlanner:
@@ -16,7 +17,7 @@ class WorkflowPlanner:
         self.bank_repo = BankRepository(self.tool_root)
 
     def _load_state(self, session_id: str) -> tuple[Path, Dict[str, Any]]:
-        s_dir = self.sessions_dir / session_id
+        s_dir = safe_path(self.sessions_dir / session_id)
         s_dir.mkdir(parents=True, exist_ok=True)
         state_file = s_dir / "session_state.json"
         if state_file.exists():
@@ -24,7 +25,7 @@ class WorkflowPlanner:
         return state_file, {"session_id": session_id, "project_name": "SnorbikApp", "vision_brief": "", "agent_protocols": ["ACP", "GOOGLE_ADK", "OPENAI_CHATKIT"]}
 
     def _save_state(self, state_file: Path, state: Dict[str, Any]) -> None:
-        state_file.write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
+        safe_path(state_file).write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
 
     def qualify_and_plan_pages(self, params: Dict[str, Any]) -> Dict[str, Any]:
         """Étape 1 : Qualifie le type de projet, le cahier des charges des pages et le diagramme de séquence de chaque page."""

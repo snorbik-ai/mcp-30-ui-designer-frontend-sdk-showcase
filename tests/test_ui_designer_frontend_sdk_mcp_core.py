@@ -67,6 +67,9 @@ def test_car_assembly_workflow_hotel_and_ecommerce_3_circles(tmp_path: Path):
     sdk_target = tmp_path / "hotel_sdk"
     mat = sdk.materialize_frontend_sdk(session_id="test-hotel-v3", target_dir=str(sdk_target))
     assert (sdk_target / "src" / "styles" / "tokens.css").exists()
+    assert (sdk_target / "src" / "styles" / "index.css").exists()
+    assert (sdk_target / "src" / "presentation" / "05-pages" / "index.ts").exists()
+    assert len(mat["qualified_pages_materialized"]) >= 2
     assert (sdk_target / "package.json").exists()
     assert (sdk_target / "components.json").exists()
     assert mat["architecture_audit"]["compliant"] is True
@@ -113,3 +116,25 @@ def test_door2_cli_execution():
     )
     out = json.loads(proc.stdout)
     assert out["status"] == "SUCCESS"
+
+
+def test_door1_stdio_jsonrpc_subprocess():
+    server_path = ROOT_DIR / "canal_mcp" / "mcp_server.py"
+    payload = "\n".join([
+        json.dumps({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {}}),
+        json.dumps({"jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {}}),
+        json.dumps({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "ui_designer_frontend_sdk_mcp_ping", "arguments": {}}}),
+    ]) + "\n"
+    proc = subprocess.run(
+        [sys.executable, str(server_path)],
+        input=payload,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    lines = [json.loads(l) for l in proc.stdout.strip().splitlines() if l.strip()]
+    assert len(lines) == 3
+    assert lines[0]["result"]["serverInfo"]["version"] == "3.0.0"
+    assert len(lines[1]["result"]["tools"]) == 18
+    ping_data = json.loads(lines[2]["result"]["content"][0]["text"])
+    assert ping_data["status"] == "HEALTHY"
