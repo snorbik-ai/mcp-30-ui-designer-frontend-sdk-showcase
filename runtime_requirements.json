@@ -1,0 +1,17 @@
+{
+  "tool_name": "30_ui_designer_frontend_sdk_mcp",
+  "doctrine_version": "4.1",
+  "ssot_sha256": "dc66573055c931996290fff5fb1d463d8600cec24591b357c050dcfb07f47a71",
+  "tier": "PALIER_3_USINE_SKILLS",
+  "runtime_type": "python",
+  "min_python": "3.10",
+  "recommended_python": "3.12.3",
+  "docker_base_image": "python:3.12-slim",
+  "embedded_python_env": "SNORBIK_EMBEDDED_PYTHON",
+  "zero_install_supported": true,
+  "sdk_contract": [
+    "get_doctrine",
+    "get_runtime_requirements",
+    "get_recommended_pipelines"
+  ]
+}
