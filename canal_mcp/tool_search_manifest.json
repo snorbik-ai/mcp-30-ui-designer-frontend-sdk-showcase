@@ -1,0 +1,228 @@
+{
+  "schema_version": "INV-20-v1.0",
+  "server_id": "30-ui-designer-frontend-sdk-mcp",
+  "server_dir": "30_ui_designer_frontend_sdk_mcp",
+  "tool_search_gateway": "36_tool_search_codemode_mcp",
+  "activation_threshold_tools": 8,
+  "summary": {
+    "total_tools": 10,
+    "public_tools": 10,
+    "auth_required_tools": 0
+  },
+  "deployment_modes": {
+    "desktop": "Passerelle Proxy Unifiée MCP #36 (tool_search_discover -> tool_search_invoke_mcp_tool)",
+    "server": "Runtime Serveur V11 (Tool Search / Push + Exécution Parallèle asyncio.gather + Pré-Contexte 2)"
+  },
+  "tools": [
+    {
+      "tool_name": "ui_designer_frontend_sdk_mcp_get_pipelines",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_frontend_sdk_mcp_get_pipelines en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    },
+    {
+      "tool_name": "ui_designer_init_session",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_init_session en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    },
+    {
+      "tool_name": "ui_designer_qualify_and_plan_pages",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_qualify_and_plan_pages en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    },
+    {
+      "tool_name": "ui_designer_extract_design_system",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_extract_design_system en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    },
+    {
+      "tool_name": "ui_designer_decompose_n1_to_n5",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_decompose_n1_to_n5 en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    },
+    {
+      "tool_name": "ui_designer_hunt_parts_3_circles",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_hunt_parts_3_circles en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    },
+    {
+      "tool_name": "ui_designer_generate_materialization_doc",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_generate_materialization_doc en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    },
+    {
+      "tool_name": "ui_designer_materialize_frontend_sdk",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_materialize_frontend_sdk en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    },
+    {
+      "tool_name": "ui_designer_generate_backend_bridge",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_generate_backend_bridge en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    },
+    {
+      "tool_name": "ui_designer_audit_architecture",
+      "nature": "SCRIPT_PUR",
+      "requires_auth": false,
+      "required_roles": [],
+      "always_load": false,
+      "planner_micro_prompt": "[USINE MONTAGE UI REACT N1-N5 & SDK AGENTS IA V3.0] Qualification pages/séquences, Design System Stitch, Chasse 3 Cercles (235+ pièces), Zéro Maquette (AI Visual Prototyping) et Po",
+      "responder_micro_prompt": "Synthétiser le digest renvoyé par ui_designer_audit_architecture en 2 phrases claires max par paragraphe.",
+      "workflow_pipeline": [
+        "ui_designer_frontend_sdk_mcp_get_pipelines",
+        "ui_designer_init_session",
+        "ui_designer_qualify_and_plan_pages",
+        "ui_designer_extract_design_system",
+        "ui_designer_decompose_n1_to_n5",
+        "ui_designer_hunt_parts_3_circles",
+        "ui_designer_generate_materialization_doc",
+        "ui_designer_materialize_frontend_sdk",
+        "ui_designer_generate_backend_bridge",
+        "ui_designer_audit_architecture"
+      ]
+    }
+  ]
+}
